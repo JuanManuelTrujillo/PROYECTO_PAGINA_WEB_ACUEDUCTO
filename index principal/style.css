@@ -1,0 +1,40 @@
+.logo{
+width: 15%;
+
+}
+
+
+/* Estilos para el contenedor del botón de búsqueda */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+#search-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de búsqueda */
+#search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambiar el estilo del botón al pasar el mouse sobre él */
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+
+#in{
+    margin-left: 50px;
+}

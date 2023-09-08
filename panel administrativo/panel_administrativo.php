@@ -1,3 +1,5 @@
+<?php include_once "parte_superior.php"?>
+
 <?php
 session_start();
 
@@ -8,8 +10,6 @@ if (!isset($_SESSION['usuario_id'])) {
 
 // Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
 ?>
-
-<?php require_once "parte_superior.php"?>
 
 <!-- INICIO DE CONTENIDO -->
     <!-- Main content -->
@@ -177,4 +177,4 @@ if (!isset($_SESSION['usuario_id'])) {
             </div>
   </div>
   <!-- FIN DE CONTENIDO -->
-  <?php require_once "parte_inferior.php"?>
+  <?php include_once "parte_inferior.php"?>

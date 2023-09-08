@@ -1,5 +1,5 @@
 <?php
-require_once
+include_once
 ?>
 
 <!-- Inicio de Pie de pagina -->

@@ -9,8 +9,9 @@ if (!isset($_SESSION['usuario_id'])) {
 // Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
 ?>
 
-<?php require_once ?>
-
+<?php
+include_once
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -217,3 +218,4 @@ if (!isset($_SESSION['usuario_id'])) {
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+    ?>

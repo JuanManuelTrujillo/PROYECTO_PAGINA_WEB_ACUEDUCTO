@@ -1,7 +1,3 @@
-<?php
-include_once
-?>
-
 <!-- Inicio de Pie de pagina -->
   <!-- /.content-wrapper -->
   <footer class="main-footer">

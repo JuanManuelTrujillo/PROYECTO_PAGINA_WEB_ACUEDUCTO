@@ -1,17 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['usuario_id'])) {
-    header("Location: index.php");
-    exit();
-}
-
-// Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
-?>
-
-<?php
-include_once
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,7 +89,7 @@ include_once
               <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <p>Juan Manuel Trujillo</p>
+              <p>Norma Herrera</p>
             </div>
           </div>
           <div class="dropdown-divider"></div>
@@ -133,8 +119,8 @@ include_once
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.php" class="brand-link">
-      <img src="img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <img src="img/logosena.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Panel Administrativo</span>
     </a>
 
     <!-- Sidebar -->
@@ -142,10 +128,11 @@ include_once
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="img/logo.jpeg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Juan Manuel Trujillo</a>
+          <a href="#" class="d-block">Acueducto y Alcantarillado</a>
+          <a href="#" class="d-block text-center">La Jagua Huila</a>
         </div>
       </div>
 
@@ -166,56 +153,63 @@ include_once
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item">
-                <a href="dashboard-inicio.php" class="nav-link active">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
-                    Inicio
-                    <span class="right badge badge-danger"></span>
-                  </p>
-                </a>
-              </li>
-          <li class="nav-item">
-              <a href="tabla-datos.php" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+              <li class="nav-item">
+              <a href="carrusel_img.php" class="nav-link">
+              <i class="fa-sharp fa-regular fa-images"></i>
               <p>
-                Usuarios
+                  Carrusel Imagenes
                 <span class="right badge badge-danger"></span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="informes.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="noticias.php" class="nav-link">
+            <i class="fa-solid fa-newspaper"></i>
               <p>
-                Informes
+                Targetas de Noticias
                 <span class="right badge badge-danger"></span>
               </p>
             </a>
           </li>
-          
-          
-          
+          <li class="nav-item">
+              <a href="Junta_directiva.php" class="nav-link">
+              <i class="fa-solid fa-users"></i>
+              <p>
+                Junta Directiva
+                <span class="right badge badge-danger"></span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="canal_atencion.php" class="nav-link">
+            <i class="fa-solid fa-comments"></i>
+              <p>
+                Canales de Atención
+                <span class="right badge badge-danger"></span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+              <a href="obras_acueducto.php" class="nav-link">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <p>
+              Obras Acueducto
+                <span class="right badge badge-danger"></span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="obras_alcantarillado.php" class="nav-link">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+              <p>
+              Obras Alcantarillado
+                <span class="right badge badge-danger"></span>
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">INICIO</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-    ?>

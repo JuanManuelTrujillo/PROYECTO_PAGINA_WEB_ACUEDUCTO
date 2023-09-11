@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ingreso.php");
+    exit();
+}
+
+// Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,7 +168,7 @@
               <i class="fa-sharp fa-regular fa-images"></i>
               <p>
                   Carrusel Imagenes
-                <span class="right badge badge-danger"></span>
+                <span class="right badge-danger"></span>
               </p>
             </a>
           </li>

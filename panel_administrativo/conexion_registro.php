@@ -1,20 +1,11 @@
 <?php
-// Conexión a la base de datos
-$servername = "127.0.0.1:3308";
-$username = "root";
-$password = "";
-$dbname = "dashboard_juan"; 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexión
-if ($conn->connect_error ) {
-	die ("Conexión fallida: " . $conn->connect_error);
-}
+include('conexion.php');
 
 // Obtener datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
+$usuario = $_POST["usuario"];
 $contraseña = $_POST["contraseña"];
 $acepta_terminos = isset($_POST['acepta_terminos']) ? 1 : 0; // 1 si está marcado, 0 si no
 
@@ -28,11 +19,11 @@ echo "El correo ya se encuentra registrado. Por favor, elige otro correo electr�
 } else {
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO registro_usuarios (nombre, correo, contraseña, acepta_terminos) VALUES ('$nombre', '$correo', '$contraseña', '$acepta_terminos')";
+$sql = "INSERT INTO registro_usuarios (nombre, correo, usuario, contraseña, acepta_terminos) VALUES ('$nombre', '$correo', '$usuario', '$contraseña', '$acepta_terminos')";
 
 if ($conn->query($sql) === TRUE) {
 // Redireccionar a la página de inicio de sesión
-     header("Location: index.php");
+     header("Location: index_carrusel.php");
      exit();
 
 } else {

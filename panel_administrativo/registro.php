@@ -16,11 +16,11 @@
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
+
+  <div class="card">
   <div class="register-logo">
     <a href="index.php"><b>Acueducto</b> La Jagua</a>
   </div>
-
-  <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Registra una nueva cuenta</p>
 
@@ -38,6 +38,14 @@
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="usuario" name="usuario"   placeholder="Usuario" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
@@ -62,22 +70,12 @@
         <!-- /.col -->
         <div class="row">
         <div class="col-12">
-        <input  type="submit" class="btn btn-primary btn-block" value="Registrarse">
+        <input  type="submit" class="btn btn-primary btn-block" value="Registrar">
           
         </div>
       </div>
         <!-- /.col -->
       </form>
-
-      <div class="social-auth-links text-center">
-        <p>- O -</p>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i>
-          Regístrese usando Google+
-        </a>
-      </div>
-
-      <a href="index.php" class="text-center">ya tengo una cuenta</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

@@ -113,7 +113,11 @@ if (!isset($_SESSION['usuario_id'])) {
             <i class="fa-solid fa-lock"></i>  Cambiar Contraseña
             <span class="float-right text-muted text-sm"></span>
           </a>
-      
+          <div class="dropdown-divider"></div>
+          <a href="registro_usuarios.php" class="dropdown-item">
+            <i class="fa-solid fa-circle-xmark"></i> Registrar Usuario
+            <span class="float-right text-muted text-sm"></span>
+          </a>
           <div class="dropdown-divider"></div>
           <a href="cerrar_sesion.php" class="dropdown-item">
             <i class="fa-solid fa-circle-xmark"></i> Cerrar Sesión
@@ -164,7 +168,7 @@ if (!isset($_SESSION['usuario_id'])) {
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
               <li class="nav-item">
-              <a href="carrusel_img.php" class="nav-link">
+              <a href="index_carrusel.php" class="nav-link">
               <i class="fa-sharp fa-regular fa-images"></i>
               <p>
                   Carrusel Imagenes

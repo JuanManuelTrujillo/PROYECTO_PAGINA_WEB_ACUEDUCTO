@@ -26,7 +26,7 @@
 
       <form action="conexion_inicio.php" method="POST">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" name="correo"  placeholder="Correo Electrónico" required>
+          <input type="text" class="form-control" name="usuario"  placeholder="Usuario" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -49,19 +49,9 @@
       </div>
         <!-- /.col -->
       </form>
-      <div class="social-auth-links text-center">
-        <p>- O -</p>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i>
-          Regístrese usando Google+
-        </a>
-      </div>
-      <!-- /.social-auth-links -->
+      <br>
       <p class="mb-1">
         <a href="olvido-contraseña.php">Olvidé mi contraseña</a>
-      </p>
-      <p class="mb-0">
-        <a href="registro.php" class="text-center">Registrar una nueva cuenta</a>
       </p>
     </div>
     <!-- /.login-card-body -->

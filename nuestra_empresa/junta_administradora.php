@@ -1,4 +1,3 @@
-<?php require_once "../index_acueducto/header.php"?>
 
           <div class="container-sm"> &nbsp;
       
@@ -98,4 +97,3 @@
   </div>
 </div>
 <!--Fin plantilla del modulo-->
-<?php require_once "../index_acueducto/footer.php"?>

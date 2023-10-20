@@ -1,4 +1,3 @@
-<?php require_once "../index_acueducto/header.php"?>
 
           <div class="container-sm">
             <center><h1>FUNCIONES GENERALES</h1></center>
@@ -25,5 +24,5 @@
             
                 </div>
           <!--Fin plantilla del modulo-->
-<?php require_once "../index_acueducto/footer.php"?>
+
 

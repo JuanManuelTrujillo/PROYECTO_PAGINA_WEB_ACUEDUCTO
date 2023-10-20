@@ -1,4 +1,3 @@
-<?php require_once "../index_acueducto/header.php"?>
 
   <div class="container-sm">
       <center><h2>HISTORIA</h2></center>
@@ -90,4 +89,3 @@
         </div>
 
           <!--Fin plantilla del modulo-->
-<?php require_once "../index_acueducto/footer.php"?>

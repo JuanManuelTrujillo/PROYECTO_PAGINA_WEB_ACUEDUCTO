@@ -1,5 +1,5 @@
-/*** Spinner Start ***/
 
+/*** Spinner Start ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -110,7 +110,7 @@
 
 @media screen and (width<= 480px) {
     .text-tobar{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         margin-right: -40px ;
     }
     .text-tobar-direct{
@@ -166,28 +166,68 @@
     }
 }
 
+/* Tamaño Pantalla Pequeña */
+@media screen and (min-width: 50px) and (max-width: 485px) {
+    .titulo-acued{
+        font-size: 0.2rem;
+    }
+    
+    .logo{
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 485px) and (max-width: 487px) {
+    .titulo-acued{
+        font-size: 0.2rem;
+    }
+    
+    .logo{
+        width: 45px;
+    }
+} 
+
+/* Tamaño Pantalla Mediana */
+@media screen and (min-width: 487px) and (max-width: 490px) {
+    .titulo-acued{
+        font-size: 0.7rem;
+    }
+    
+    .logo{
+        width: 47px;
+    }
+} 
+
+@media screen and (min-width: 490px) and (max-width: 541px) {
+    .titulo-acued{
+        font-size: 1rem;
+    }
+    
+    .logo{
+        width: 50px;
+    }
+} 
+
+@media screen and (min-width:541px) and (max-width: 1024px) {
+    .titulo-acued{
+        font-size: 1.1rem;
+    }
+    
+    .logo{
+        width: 70px;
+    }
+} 
+
 @media screen and (max-width: 604px) {
     .titulo-acued{
         font-size: 1rem;
     }
 } 
 
-@media screen and (max-width: 510px) {
-    .titulo-acued{
-        font-size: 0.8rem;
-    }
-    .logo{
-        width: 37px;
-    }
-} 
-
-@media screen and (width <= 414px) {
-    .logo{
+@media screen and (max-width: 767px) {
+    .text-tobar-direct{
         display: none;
-    }
-    .titulo-acued{
-        font-size: 0.9rem;
-    }
+    } 
 } 
 
 @media screen and (width >= 1024px) {
@@ -421,9 +461,17 @@
     font-size: 2rem;
 }
 
+/* Tamaño Pantalla Pequeña*/
 @media screen and (max-width: 450px){
     .titulo-footer{
         font-size: 1.2rem;
     }
 }
+
+/* Tamaño Pantalla Mediana */
+@media screen and (min-width:450px) and (max-width: 991px) {
+    .titulo-footer{
+        font-size: 1.2rem;
+    }
+} 
 /*** Footer End ***/

@@ -64,8 +64,8 @@
         </div>
         <!-- Topbar End -->
 
-        <!-- Navbar Start -->
-        <div class="navegacion container-fluid">
+   <!-- Navbar Start -->
+   <div class="navegacion container-fluid">
             <div class="container-fluid">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <img src="../img/logo-acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
@@ -78,51 +78,47 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.php" class="nav-item nav-link active text-secondary">Inicio</a>
+                            <a href="../index.php" class="nav-item nav-link active text-secondary">Inicio</a>
                             <div class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="historia.php" class="dropdown-item">Historia</a>
-                                    <a href="mision_vision.php" class="dropdown-item">Misión y Visión </a>
-                                    <a href="junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
-                                    <a href="funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="normatividad.php" class="dropdown-item">Normatividad</a>
-                                    <a href="glosario.php" class="dropdown-item">Glosario</a>
+                                    <a href="../nuestra_empresa/historia.php" class="dropdown-item">Historia</a>
+                                    <a href="../nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
+                                    <a href="../nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
+                                    <a href="../nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
+                                    <a href="../nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
+                                    <a href="../nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Canales de Atención</a>
-                                    <a href="#" class="dropdown-item">PQRSD</a>
+                                    <a href="atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
+                                    <a href="atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="#" class="dropdown-item">Plan Maestro de Abastecimiento</a>
-                                    <a href="#" class="dropdown-item">Sistema de Abastecimiento</a>
-                                    <a href="#" class="dropdown-item">Zonas de Servicio</a>
-                                    <a href="#" class="dropdown-item">Mapa del Acueducto</a>
-                                    <a href="#" class="dropdown-item">Obras</a>
+                                    <a href="../acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
+                                    <a href="../acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
+                                    <a href="../acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
+                                    
+                                    
+                                    <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="#" class="dropdown-item">Sistema de Drenaje</a>
-                                    <a href="#" class="dropdown-item">PTAR Lagunas de Oxidación</a>
-                                    <a href="#" class="dropdown-item">Mapa del Alcantarillado</a>
+                                    <a href="../acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
+                                    <a href="../acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
+                                    <a href="../acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
                             </div>
-                            <a href="#" class="nav-item nav-link">Enseñanza</a>
+                            <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Transparencia</a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Normativa</a>
-                                    <a href="#" class="dropdown-item">Estatutos</a>
-                                    <a href="#" class="dropdown-item">Estudio Tarifario</a>
-                                </div>
+                                <a href="../transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
+
                             </div>
                         </div>
-                        <a href="panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
+                        <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
@@ -133,58 +129,78 @@
         </div>
         <!-- Navbar End -->
 
-
       
 
 
 
         <!-- Inicio Conteido -->
-                  <!-- Page Header Start -->
-                  <div class="container-fluid page-header py-5">
+ <!-- Page Header Start -->
+ <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Glosario</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Canales de Atención</h1>
 
             </div>
         </div>
         <!-- Page Header End -->
-  <!-- About Start -->
-  <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-1 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
 
+
+
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-5 my-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Blog</h5>
+                    <h1>Latest Blog & News</h1>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="../img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Presencial</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                              <br>
+                              <br>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                               <br>
+                               <br>
+                                
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="bi bi-house-fill me-2 text-secondary"></i>Calle 4 número 2- Barrio San José La Jagua Huila</small></a>
+                               
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-10 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        
-                    
-                        <h5><b>palabra</b></h5>
-                     <p>Long Tail
-                     El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                <p>Long Tail
-                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                    <p>Long Tail
-                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <h5><b>palabra</b></h5>
-                        <p>Long Tail
-                            El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                            <h5><b>palabra</b></h5>
-                            <p>Long Tail
-                                El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                <h5><b>palabra</b></h5>
-                                <p>Long Tail
-                                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                    <h5><b>palabra</b></h5>
-                                    <p>Long Tail
-                                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <p class="mb-4">En el año 1991, la Constitución Colombiana consagró la institución y la dispuso en su artículo 318 (2).2​Funciones Con el fin de mejorar la prestación de los servicios y asegurar la participación de la ciudadanía en el manejo de los asuntos públicos de carácter local, los concejos municipales podrán dividir sus municipios en comunas (cuando se trate de áreas urbanas) y en corregimientos (en el caso de las zonas rurales). En cada una de las comunas o corregimientos habrá una junta administradora local de elección popular, integrada por el número de miembros que determine la ley, que tendrá las siguientes funciones: Participar en la elaboración de los planes y programas municipales de desarrollo económico y social y de obras públicas. Vigilar y controlar la prestación de los servicios municipales en su comuna o corregimiento y las inversiones que se realicen con recursos públicos. Formular propuestas de inversión ante las autoridades nacionales, departamentales y municipales encargadas de la elaboración de los respectivos planes de inversión. Distribuir las partidas globales que les asigne el presupuesto municipal. Ejercer las funciones que les deleguen el concejo y otras autoridades locales. </p>
-                      
+                    <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="../img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Virtual</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                    <br>
+                                   <br>
+                               
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                              <br>
+                              <br>
+
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="text-white"><small><i class="bi bi-envelope-fill me-2 text-secondary"></i>Email</small></a>
+                                <a href="https://web.whatsapp.com/" class="text-white"><small><i class="bi bi-whatsapp me-2 text-secondary"> </i>WhatsApp</small></a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        <!-- Blog End -->
+
+
 
 <!-- Fin Contenido -->
 

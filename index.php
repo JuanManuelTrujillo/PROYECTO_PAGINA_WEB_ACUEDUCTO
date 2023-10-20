@@ -79,7 +79,7 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="index.php" class="nav-item nav-link active text-secondary">Inicio</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="nuestra_empresa/historia.php" class="dropdown-item">Historia</a>
                                     <a href="nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
@@ -90,35 +90,31 @@
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Canales de Atención</a>
-                                    <a href="#" class="dropdown-item">PQRSD</a>
+                                    <a href="atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
+                                    <a href="atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="#" class="dropdown-item">Plan Maestro de Abastecimiento</a>
-                                    <a href="#" class="dropdown-item">Sistema de Abastecimiento</a>
-                                    <a href="#" class="dropdown-item">Zonas de Servicio</a>
-                                    <a href="#" class="dropdown-item">Mapa del Acueducto</a>
-                                    <a href="#" class="dropdown-item">Obras</a>
+                                    <a href="acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
+                                    <a href="acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
+                                    <a href="acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
+                                    
+                                    
+                                    <a href="acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="#" class="dropdown-item">Sistema de Drenaje</a>
-                                    <a href="#" class="dropdown-item">PTAR Lagunas de Oxidación</a>
-                                    <a href="#" class="dropdown-item">Mapa del Alcantarillado</a>
+                                    <a href="acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
+                                    <a href="acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
+                                    <a href="acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
                             </div>
-                            <a href="#" class="nav-item nav-link">Enseñanza</a>
+                            <a href="enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Transparencia</a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">Normativa</a>
-                                    <a href="#" class="dropdown-item">Estatutos</a>
-                                    <a href="#" class="dropdown-item">Estudio Tarifario</a>
-                                </div>
+                                <a href="transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
+
                             </div>
                         </div>
                         <a href="panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>

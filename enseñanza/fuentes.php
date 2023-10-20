@@ -80,14 +80,14 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="index.php" class="nav-item nav-link active text-secondary">Inicio</a>
                             <div class="nav-item dropdown">
-                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="historia.php" class="dropdown-item">Historia</a>
-                                    <a href="mision_vision.php" class="dropdown-item">Misión y Visión </a>
-                                    <a href="junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
-                                    <a href="funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="normatividad.php" class="dropdown-item">Normatividad</a>
-                                    <a href="glosario.php" class="dropdown-item">Glosario</a>
+                                    <a href="nuestra_empresa/historia.php" class="dropdown-item">Historia</a>
+                                    <a href="nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
+                                    <a href="nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
+                                    <a href="nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
+                                    <a href="nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
+                                    <a href="nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
@@ -139,52 +139,67 @@
 
 
         <!-- Inicio Conteido -->
-                  <!-- Page Header Start -->
-                  <div class="container-fluid page-header py-5">
+                <!-- Page Header Start -->
+                <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Glosario</h1>
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Como darles un mejor uso a las fuentes hidricas</h1>
 
             </div>
         </div>
         <!-- Page Header End -->
-  <!-- About Start -->
-  <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-1 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+        <br>
+  <div class="container-sm">
+      
 
-                    </div>
-                    <div class="col-lg-10 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        
-                    
-                        <h5><b>palabra</b></h5>
-                     <p>Long Tail
-                     El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                <p>Long Tail
-                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                    <p>Long Tail
-                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <h5><b>palabra</b></h5>
-                        <p>Long Tail
-                            El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                            <h5><b>palabra</b></h5>
-                            <p>Long Tail
-                                El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                <h5><b>palabra</b></h5>
-                                <p>Long Tail
-                                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                    <h5><b>palabra</b></h5>
-                                    <p>Long Tail
-                                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <p class="mb-4">En el año 1991, la Constitución Colombiana consagró la institución y la dispuso en su artículo 318 (2).2​Funciones Con el fin de mejorar la prestación de los servicios y asegurar la participación de la ciudadanía en el manejo de los asuntos públicos de carácter local, los concejos municipales podrán dividir sus municipios en comunas (cuando se trate de áreas urbanas) y en corregimientos (en el caso de las zonas rurales). En cada una de las comunas o corregimientos habrá una junta administradora local de elección popular, integrada por el número de miembros que determine la ley, que tendrá las siguientes funciones: Participar en la elaboración de los planes y programas municipales de desarrollo económico y social y de obras públicas. Vigilar y controlar la prestación de los servicios municipales en su comuna o corregimiento y las inversiones que se realicen con recursos públicos. Formular propuestas de inversión ante las autoridades nacionales, departamentales y municipales encargadas de la elaboración de los respectivos planes de inversión. Distribuir las partidas globales que les asigne el presupuesto municipal. Ejercer las funciones que les deleguen el concejo y otras autoridades locales. </p>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
+<p>
+  
+  Como darles un mejor uso a las fuentes hídricasCómo ahorrar agua en el baño
+  Según la Agencia de Protección Ambiental (EPA, por sus siglas en inglés) de Estados Unidos, el baño es el sitio del hogar donde se produce más de la mitad del consumo de agua. Para ahorrar, propone:
+  No dejar correr el agua al afeitarse o cepillarse los dientes.
+  Tomar una ducha por periodos cortos en vez de tomar baños de tina y cerrar la llave del agua al enjabonarse o lavarse la cabeza.
+  Si no se puede evitar el uso de la tina, cerrar el desagüe antes de abrir la llave del agua y llenarla solo hasta la mitad.
+  No arrojar basura al inodoro
+ </p>
+ <br>
+ <hr>
+
+
+
+ <div class="card-group">
+  <div class="card">
+      <iframe  src="https://www.youtube.com/embed/ptc4Awb0UpU?si=6tVRaUlj48KUaUWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+ <a href="https://www.youtube.com/embed/ptc4Awb0UpU?si=6tVRaUlj48KUaUWk">https://www.youtube.com/embed/ptc4Awb0UpU?si=6tVRaUlj48KUaUWk</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">actualizado</small>
+    </div>
+  </div>
+  <div class="card">
+      <iframe  src="https://www.youtube.com/embed/C6WQ7uY5W7o?si=mLOgXQZXd_MV4q8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+     <a href="https://www.youtube.com/embed/C6WQ7uY5W7o?si=mLOgXQZXd_MV4q8f">https://www.youtube.com/embed/C6WQ7uY5W7o?si=mLOgXQZXd_MV4q8f</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">actualizado</small>
+    </div>
+  </div>
+  <div class="card">
+      <iframe  src="https://www.youtube.com/embed/r3cH7KYhgq8?si=T6KBvDkK2YibWeUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+     <a href="https://www.youtube.com/embed/r3cH7KYhgq8?si=T6KBvDkK2YibWeUh">https://www.youtube.com/embed/r3cH7KYhgq8?si=T6KBvDkK2YibWeUh</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">actualizado</small>
+    </div>
+  </div>
+</div>
+ </div>
+
+<br>
 
 <!-- Fin Contenido -->
 

@@ -1,91 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
 
-  <div class="container-sm">
-      <center><h2>HISTORIA</h2></center>
-      <hr>
-      
-     
-      <p>Desde las mujeres que transportaban el agua en cántaros, pasando por las fuentes públicas como la del “Mono de la Pila” hasta los métodos tecnificados actuales, el agua ha estado ligada al desarrollo de Bogotá.
- 
-        El 2 de julio de 1888 entró en servicio el primer tramo de tubería de hierro en el centro de Bogotá. Desde entonces hemos caminado a la par con el crecimiento de la ciudad, llevando bienestar y mejorando la calidad de vida de millones de colombianos.
-         
-        La tarea no ha sido fácil y sin embargo hemos creado varias de las más grandes obras de ingeniería del país, entre ellas, el embalse de San Rafael, la planta de tratamiento Francisco Wiesner, las plantas de tratamiento El Dorado y Tibitoc, la planta de tratamiento de aguas residuales PTAR Salitre, el Centro de Control, la presa seca Cantarrana y el interceptor Fucha Tunjuelo. 
-         
-        Con la llegada del agua potable erradicamos epidemias y mejoramos los niveles de salud de los bogotanos.
-        
-        1600
-        imagen historia año 1600
-        La importancia del agua en el devenir de la humanidad explica el estrecho vínculo que tiene con el desarrollo de la cultura. En tiempo prehispánico la Sabana de Bogotá ofrecía un paisaje en el que se destacaban gran cantidad de lagunas y ríos, donde los Muiscas, moradores originarios de la región, celebraban sus ritos más sagrados. El precioso líquido se encontraba tan ligado a sus vidas que era considerado una deidad llamada SIE.
-        
-        La abundancia de agua encontrada por los conquistadores en la sabana, se convirtió en factor determinante para la fundación del caserío de Teusaquillo, antiguo nombre de Santa Fé de Bogotá. La ciudad se localizó entre los ríos San Francisco y San Agustín, de los cuales tomaban líquido sus moradores, transportándola en Múcuras hasta las viviendas.
-        
-        Acueducto de Agua Vieja
-        En 1584 el Cabildo ordenó la construcción de la primera fuente de la Bogotá colonial, el Mono de la Pila, cuyas aguas eran conducidas hasta allí desde el río San Agustín. La cañería que transportaba el agua atravesaba una arboleda de laureles por lo que se llamó el acueducto de los Laureles. Durante los siguientes 100 años se construyeron otras fuentes de agua, igualmente rudimentarias
-        
-        1700
-        imagen historia año 1700
-        Acueducto de Agua Nueva
-        En mayo de 1757 se inauguró el acueducto de Agua Nueva que se constituyó en la obra más importante de este período y conducía las aguas del río San Francisco a la ciudad.
-        
-        Alcantarillado Colonial
-        En cuanto a la disposición de las aguas servidas (aguas negras), durante el período colonial, la sección transversal de las calles y carreras tenían la forma de batea o artesa, con la parte más honda en el centro por donde corría un caño revestido por lajas de piedra. Los habitantes arrojaban las aguas residuales y las basuras en este caño que corría por toda la ciudad, y la lluvia era la encargada de limpiar el primitivo drenaje que desembocaba en los mismos ríos, aguas abajo o en los pantanos al occidente de la ciudad
-        
-        1800
-        fotografía historia año 1800
-        Acueducto Privado
-        En 1886 el municipio concedió a Ramón B. Jimeno y a Antonio Martínez de la Cuadra la exclusividad para establecer, usar y explotar los acueductos de Bogotá y Chapinero por un período de setenta años. Como parte de este sistema, se inauguró en 1888 el primer acueducto con tubería de hierro de la ciudad.
-        
-        1900
-        imagen historia año 1900
-        Acueducto Municipal
-        El sistema privado no fue la respuesta a las necesidades del servicio de la ciudad, por lo cual, en 1914 el Acueducto regresó a la Municipalidad y se dio inicio a una serie de obras para solucionar el problema de abastecimiento que venía sufriendo la ciudad. Se construyeron tanques en las zonas altas de la ciudad y se renovaron tuberías. En 1920 se inició la desinfección del agua por medio del Cloro y a finales de esta década se constituyó una nueva empresa con el Tranvía y el Acueducto.
-        
-        En 1933 se iniciaron obras importantes para la prestación del servicio, entre ellas, el embalse de la Regadera y la planta de tratamiento Vitelma, junto con los embalses de Chisacá y los Tunjos y la Planta de tratamiento de San Diego.
-        
-        Alcantarillado de la República
-        En el siglo XIX la responsabilidad de construir alcantarillado fue asumida por el Municipio y se prohibieron las acequias que corrían a cielo abierto por las calles. A partir de la segunda década del siglo XX, se ordenó cubrir los lechos de los ríos San Francisco y San Agustín, constituyéndose en la obra precursora para el alcantarillado moderno.
-        
-        Con las ideas renovadoras de la planificación urbana, las cuales se impulsaron en 1948, se diseñó el Plan Piloto de Desarrollo Urbano dando inicio a los estudios de los colectores troncales y canales para el drenaje adecuado del área urbana.
-        
-        1950
-        imagen historia año actualidad
-        Nace la Empresa de Acueducto y Alcantarillado de Bogotá
-        En 1955 el acueducto se desvinculó del tranvía y se unió al sistema de alcantarillado, creando la Empresa de Acueducto y Alcantarillado de Bogotá -EAAB-, mediante el acuerdo 105 del Concejo Administrativo de la ciudad.
-        
-        Se empezó el desarrollo de estudios para traer más agua a Bogotá y comenzó la construcción de la planta de tratamiento Tibitoc que terminó en 1959 con una capacidad inicial de 3.5 metros cúbicos por segundo. Las 2 ampliaciones posteriores permiten hoy contar con una capacidad de 10.4 metros cúbicos por segundo. Esta planta se constituyó en el primer sistema de gran envergadura de la ciudad. Se surte de las aguas del río Bogotá que llegan por bombeo a la planta.
-        
-        Sistemas Modernos Acueducto
-        Ante el acelerado crecimiento de la ciudad, la EAAB puso en marcha el proyecto Chingaza. En 1972 se iniciaron las obras. En la primera etapa se construyó el embalse de Chuza, de donde el agua es transportada por túneles hasta la Planta de Tratamiento Francisco Wiesner (antigua Planta El Sapo), localizada en el valle del río Teusacá.
-        
-        El sistema Chingaza se complementó con la construcción del Embalse de San Rafael que empezó a funcionar en 1997 con una capacidad máxima de 75 millones de metros cúbicos. El agua de San Rafael es transportada a la Planta de tratamiento Francisco Wiesner.
-        
-        Sistemas Modernos Alcantarillado
-        Desde la década de los 60, la Empresa elaboró un plan maestro de alcantarillado, decidiendo mantener el sistema de alcantarillado combinado en la parte antigua de la ciudad y adoptar para los futuros desarrollos el sistema separado o semi-combinado.</p>
- <br>
-  </div>
- 
-    <!-- Fin Agg a la plantilla-->
-           <!--Contenido-->
-           <div class="container-sm">
-            
-            <div class="row">
-                <h1>ANTES</h1>
-                <div class="col-md-6 well"> INICIOS año 1600
-                    <img src="img/historia_1600.jpg" alt="">
-                </div>
-                <div class="col-md-6 well"> INICIOS año 1700
-                    <img src="img/historia_1700.jpg" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <h1>AHORA</h1> 
-                <div class="col-md-6 well"> INICIOS año 1800
-                    <img src="img/historia_1800.jpg" alt="">
-                </div>
-                <div class="col-md-6 well"> INICIOS año 1900
-                    <img src="img/historia_1900.jpg" alt="">
-                </div>
-            </div>
-            
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/logo-acueducto.png">
+        <title>J.A.A.A La Jagua Huila</title>
+        <title ng-bind="main.seo.title">ACUEDUCTO Y ALCANTARILLADO CENTRO POBLADO LA JAGUA HUILA</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="author" content="ADSO Sena Ficha 2502629">
+        <meta name="description" content="Junta Administradora de Acueducto y Alcantarillado Centro Poblado La Jagua Huila">
+        <meta name="keywords" content="Acueducto La Jagua Huila,la Jagua Garzón Huila, Garzón Huila, Junta Administradora acueducto y alcantarillado La Jagua Huila">
+        <meta property="og:type" content="website">
+        <meta property="og:url" nosune-meta-tags="main.seo.url" content="https://acueducto.adsosena.com/">
+        <meta property="og:title" nosune-meta-tags="main.seo.title" content="ACUEDUCTO Y ALCANTARILLADO CENTRO POBLADO LA JAGUA HUILA">
+        <meta property="og:description" nosune-meta-tags="main.seo.description" content="Junta Administradora de Acueducto y Alcantarillado Centro Poblado La Jagua Huila">
+        <meta property="og:image:width" content="800">
+        <meta property="og:image:height" content="418">
+        <meta property="og:image" nosune-meta-tags="main.seo.image" content="http://www.empugaresp.gov.co/sites/empresas-publicas-de-garzon/content/files/000001/1_entidad_1200x800.png">
+
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="../lib/animate/animate.min.css" rel="stylesheet">
+        <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="../css/estilo.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css_contenido/style.css">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
         </div>
+        <!-- Spinner End -->
 
-          <!--Fin plantilla del modulo-->
+        <!-- Topbar Start -->
+        <div class="info container-fluid py-2 d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="text-tobar-direct me-3 text-light-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Calle 4 número 2- Barrio San José La Jagua Huila</small>
+                        <small class="text-tobar me-3 text-light-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>acueductoalcant_lajagua@hotmail.com</small>
+                    </div>
+                    <div class="top-link">
+                        <a href="" class="ico-topbar bg-secondary nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-whatsapp"></i></a>
+                        <a href="" class="ico-topbar bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+ 
+                <!-- Navbar Start -->
+                <div class="navegacion container-fluid">
+            <div class="container-fluid">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <img src="../img/logo-acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
+
+                    <a href="../index.php" class="titulo navbar-brand">
+                        <h1 class="titulo titulo-acued text-white fw-bold d-block">Acueducto y Alcantarillado <span>La Jagua Huila</span></h1>
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="../index.php" class="nav-item nav-link active text-secondary">Inicio</a>
+                            <div class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="historia.php" class="dropdown-item">Historia</a>
+                                    <a href="mision_vision.php" class="dropdown-item">Misión y Visión </a>
+                                    <a href="junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
+                                    <a href="funciones-generales.php" class="dropdown-item">Funciones Generales</a>
+                                    <a href="normatividad.php" class="dropdown-item">Normatividad</a>
+                                    <a href="glosario.php" class="dropdown-item">Glosario</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="../atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
+                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="../acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
+                                    <a href="../acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
+                                    <a href="../acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
+                                    
+                                    
+                                    <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <a href="../acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
+                                    <a href="../acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
+                                    <a href="../acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
+                                </div>
+                            </div>
+                            <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
+                            <div class="nav-item dropdown">
+                                <a href="../transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
+
+                            </div>
+                        </div>
+                        <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+      
+
+
+
+        <!-- About Start -->
+        <div class="container-fluid py-5 my-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 position-relative">
+                            <img src="img/001.jpg" class="img-fluid w-75 rounded" alt="Imagenes de la historia" style="margin-bottom: 18%;">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                     
+                        <h1 class="mb-4">Historia</h1>
+                        <p>Hace muchos años, en el pintoresco pueblo de Jagua, Huila, un antiguo acueducto proporcionaba agua a la comunidad. Inicialmente, este vital recurso pertenecía a la Junta de Acción Comunal, que lo administraba con esmero.
+
+                            Sin embargo, en un día caluroso de agosto de 2002, todo cambió. La Junta de Acción Comunal tomó una audaz decisión: separarse y transformar el acueducto en un ente económico independiente. Esta decisión marcó un nuevo comienzo para el servicio de agua.
+                            
+                            Bajo su nueva gestión independiente, el acueducto de Jagua floreció. Pudieron invertir en mejoras y mantenimiento, brindando agua más confiable y de mejor calidad a la comunidad. Con tarifas justas y un enfoque en la sostenibilidad, el acueducto se convirtió en un modelo a seguir para otras comunidades en busca de un acceso confiable al agua.
+                            
+                            Desde entonces, el acueducto de Jagua ha seguido sirviendo a su comunidad con orgullo, asegurando que todos tengan acceso a agua limpia y fresca. La decisión de separarse y convertirse en un ente económico independiente demostró que a veces, la independencia es la clave para un mejor futuro.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+      
+
+
+        <!-- Project Start -->
+        <div class="container-fluid project py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Galeria de fotos</h5>
+                    <h1>Viejas</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h1.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web design</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Cyber Security</h4>
+                                        <p class="m-0 text-white">Cyber Security Core</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h3.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Mobile Info</h4>
+                                        <p class="m-0 text-white">Upcomming Phone</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h4.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Web Development</h4>
+                                        <p class="m-0 text-white">Web Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h5.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">Digital Marketing</h4>
+                                        <p class="m-0 text-white">Marketing Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/h6.jpg" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-secondary">keyword Research</h4>
+                                        <p class="m-0 text-white">keyword Analysis</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+
+
+       
+
+      
+      
+      
+<!-- Footer Start -->
+<div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <a href="index.php">
+                        <h1 class="titulo-footer text-white fw-bold d-block">Junta Administradora de Acueducto y Alcantarillado La Jagua Huila<span class="text-secondary"> NIT.800254912-4</span> </h1>
+                    </a>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="mt-4 text-light">La Junta Administradora del acueducto y alcantarillado de La Jagua es una entidad Sin Ánimo de Lucro obtuvo su personería jurídica el 21 de febrero de 1995.</p>
+                        <div class="d-flex hightech-link">
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-whatsapp text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Horarios de Atención</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Lunes a Viernes</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>8:00 am a 12:00 pm</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>3:00 pm a 5:00 pm</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Puntos de Recaudo</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Papeleria Pipelin:</b> Calle 4 número 5-21 Barrio San José</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Corresponsal Bancolombia:</b> Calle número 5 3-25 Barrio San Martín</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Contactos</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Calle 4 número 2- Barrio San José La Jagua Huila</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>3227324944</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>acueductoalcant_lajagua @hotmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5 mb-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="index.php" class="text-secondary"><i class="fas fa-copyright me-2"></i>Acueducto La Jagua Huila</a>, Todos los derechos reservados.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <span class="text-light">Diseñado Por <a href="#" class="text-secondary">ADSO 2502629 </a>CADPH Garzón Huila</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/waypoints/waypoints.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>

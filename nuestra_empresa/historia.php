@@ -114,10 +114,7 @@
                                 </div>
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
-                            <div class="nav-item dropdown">
-                                <a href="../transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
-
-                            </div>
+                            <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>

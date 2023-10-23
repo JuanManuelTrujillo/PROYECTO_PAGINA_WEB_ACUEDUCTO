@@ -93,8 +93,8 @@
                             <div class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
-                                    <a href="atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
+                                    <a href="canales.php" class="dropdown-item">Canales de Atención</a>
+                                    <a href="PQRS.php" class="dropdown-item">PQRSD</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
@@ -113,10 +113,7 @@
                                 </div>
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
-                            <div class="nav-item dropdown">
-                                <a href="../transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
-
-                            </div>
+                            <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>

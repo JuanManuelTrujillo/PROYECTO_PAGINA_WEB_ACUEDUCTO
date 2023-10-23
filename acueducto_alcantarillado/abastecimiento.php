@@ -70,7 +70,7 @@
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <img src="../img/logo-acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
 
-                    <a href="index.php" class="titulo navbar-brand">
+                    <a href="../index.php" class="titulo navbar-brand">
                         <h1 class="titulo titulo-acued text-white fw-bold d-block">Acueducto y Alcantarillado <span>La Jagua Huila</span></h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -93,16 +93,16 @@
                             <div class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
-                                    <a href="atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
+                                    <a href="../atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
+                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="../acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="../acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
-                                    <a href="../acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
+                                    <a href="infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
+                                    <a href="plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
+                                    <a href="abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
@@ -113,10 +113,7 @@
                                 </div>
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
-                            <div class="nav-item dropdown">
-                                <a href="../transparencia/transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
-
-                            </div>
+                            <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>

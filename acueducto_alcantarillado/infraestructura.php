@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="icon" href="img/logo-acueducto.png">
+        <link rel="icon" href="img/logo_acueducto.png">
         <title>J.A.A.A La Jagua Huila</title>
         <title ng-bind="main.seo.title">ACUEDUCTO Y ALCANTARILLADO CENTRO POBLADO LA JAGUA HUILA</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -68,7 +68,7 @@
                <div class="navegacion container-fluid">
             <div class="container-fluid">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <img src="../img/logo-acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
+                    <img src="img/logo_acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
 
                     <a href="../index.php" class="titulo navbar-brand">
                         <h1 class="titulo titulo-acued text-white fw-bold d-block">Acueducto y Alcantarillado <span>La Jagua Huila</span></h1>

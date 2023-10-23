@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="icon" href="img/logo-acueducto.png">
+        <link rel="icon" href="img/logo_acueducto.png">
         <title>J.A.A.A La Jagua Huila</title>
         <title ng-bind="main.seo.title">ACUEDUCTO Y ALCANTARILLADO CENTRO POBLADO LA JAGUA HUILA</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -70,7 +70,7 @@
         <div class="navegacion container-fluid">
             <div class="container-fluid">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <img src="../img/logo-acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
+                    <img src="img/logo_acueducto.png" class="logo img-fluid" alt="Logo Acueducto Centro Poblado La Jagua Huila.">
 
                     <a href="../index.php" class="titulo navbar-brand">
                         <h1 class="titulo titulo-acued text-white fw-bold d-block">Acueducto y Alcantarillado <span>La Jagua Huila</span></h1>
@@ -84,12 +84,12 @@
                             <div class="nav-item dropdown">
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nuestra Empresa</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="historia.php" class="dropdown-item">Historia</a>
-                                    <a href="mision_vision.php" class="dropdown-item">Misión y Visión </a>
-                                    <a href="junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
-                                    <a href="funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="normatividad.php" class="dropdown-item">Normatividad</a>
-                                    <a href="glosario.php" class="dropdown-item">Glosario</a>
+                                    <a href="../nuestra_empresa/historia.php" class="dropdown-item">Historia</a>
+                                    <a href="../nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
+                                    <a href="../nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
+                                    <a href="../nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
+                                    <a href="../nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
+                                    <a href="../nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">

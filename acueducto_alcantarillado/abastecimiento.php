@@ -146,7 +146,7 @@
 <hr>
 
 <center> <img src="img/abastecimiento.jpg" class="img-fluid" alt="..." style="width: 60%;"></center>
-<p>Los sistemas de abastecimiento están compuestos de: sistemas de captación (cuencas hidrográficas, ríos y quebradas), sistemas de distribución (túneles y tuberías), sistemas de almacenamiento (embalses) y producción (plantas de tratamiento).</p>
+<p>Los sistemas de abastecimiento están compuestos de sistemas de captación en nuestro caso de la quebrada Agua caliente, sistemas de distribución (tuberías), sistemas de almacenamiento (tanques concreto) y producción (planta de tratamiento).</p>
 <div class="card">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
            <a href="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe"></a>

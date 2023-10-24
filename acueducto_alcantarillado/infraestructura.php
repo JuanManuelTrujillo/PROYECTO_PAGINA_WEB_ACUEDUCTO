@@ -144,8 +144,8 @@
   <div class="container-sm">
       
 
-      <p> El Acueducto de Bogotá realiza la gestión integral del recurso hídrico gracias al Sistema de Acueducto, que está formado por varios componentes que cumplen cada uno una función en la captación, transporte, tratamiento, almacenamiento y distribución del agua.
-         El proceso inicia desde la captación de las fuentes de agua y luego pasa a las líneas de aducción o transporte del agua cruda, luego a los embalses donde se almacena el agua cruda, las plantas de tratamiento, las conducciones de agua tratada desde las plantas de tratamiento hasta los tanques de almacenamiento y compensación, y por último, las estaciones de bombeo para garantizar el suministro de agua potable a las viviendas, industrias e instituciones de Bogotá y de municipios como: La Calera, Chía, Cajicá, Tocancipá, Gachancipá, Sopó, Cota, Funza, Madrid, Mosquera y Soacha. Con este sistema se garantiza la seguridad, durabilidad, funcionalidad, calidad técnica, eficiencia de operación y sostenibilidad de los sistemas de acueducto.
+      <p> El Acueducto de la Jagua realiza la gestión integral del recurso hídrico gracias al Sistema de Acueducto, que está formado por varios componentes que cumplen cada uno una función en la captación, transporte, tratamiento, almacenamiento y distribución del agua.
+         El proceso inicia desde la captación de la fuente de agua y luego pasa a las líneas de aducción o transporte del agua cruda, luego a la planta de tratamiento, las conducciones de agua tratada desde las plantas de tratamiento hasta los tanques de almacenamiento y compensación, y por último las estaciones de distribución para garantizar el suministro de agua potable a las viviendas del centro poblado La Jagua. Con este sistema se garantiza la seguridad, durabilidad, funcionalidad, calidad técnica, eficiencia de operación y sostenibilidad de los sistemas de acueducto.
      </p>
      <br>
 

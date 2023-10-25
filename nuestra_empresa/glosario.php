@@ -144,34 +144,74 @@
   <div class="container-fluid py-5 my-5">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-lg-1 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
 
-                    </div>
-                    <div class="col-lg-10 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-lg-10 col-md-4 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         
                     
-                        <h5><b>palabra</b></h5>
-                     <p>Long Tail
-                     El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                <p>Long Tail
-                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                    <h5><b>palabra</b></h5>
-                    <p>Long Tail
-                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <h5><b>palabra</b></h5>
-                        <p>Long Tail
-                            El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                            <h5><b>palabra</b></h5>
-                            <p>Long Tail
-                                El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                <h5><b>palabra</b></h5>
-                                <p>Long Tail
-                                    El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                                    <h5><b>palabra</b></h5>
-                                    <p>Long Tail
-                                        El término "long tail" es un gráfico típico de distribución de probabilidad. Donde la mayoría de items dibujados estarán en posición central, con una distribución que se hace más delgada y pequeña conforme nos movemos a derecha, esa zona delgada correspondiente a una minoría, es el long-tail. Cuando se aplica al SEO, podemos ver que hay un número pequeño de palabras clave que son extremadamente populares, un gran número que tienen popularidad media, y muchas otras que solo tienen unos pocos clicks. fuente: https://disenowebakus.net/glosario-diseno-web.php</p><br><br>
-                        <p class="mb-4">En el año 1991, la Constitución Colombiana consagró la institución y la dispuso en su artículo 318 (2).2​Funciones Con el fin de mejorar la prestación de los servicios y asegurar la participación de la ciudadanía en el manejo de los asuntos públicos de carácter local, los concejos municipales podrán dividir sus municipios en comunas (cuando se trate de áreas urbanas) y en corregimientos (en el caso de las zonas rurales). En cada una de las comunas o corregimientos habrá una junta administradora local de elección popular, integrada por el número de miembros que determine la ley, que tendrá las siguientes funciones: Participar en la elaboración de los planes y programas municipales de desarrollo económico y social y de obras públicas. Vigilar y controlar la prestación de los servicios municipales en su comuna o corregimiento y las inversiones que se realicen con recursos públicos. Formular propuestas de inversión ante las autoridades nacionales, departamentales y municipales encargadas de la elaboración de los respectivos planes de inversión. Distribuir las partidas globales que les asigne el presupuesto municipal. Ejercer las funciones que les deleguen el concejo y otras autoridades locales. </p>
+                    <h5><b>Acueducto</b></h5>
+                    <p>Sistema de conducción, tratamiento y distribución de agua potable.   </p>  
+
+                    <h5><b>Alcantarillado</b></h5>
+                    <p>Sistema de evacuación y tratamiento de los residuos sólidos y líquidos.</p>
+
+                    <h5><b>Riego</b></h5>
+                    <p> Sistema de distribución de agua potable para el uso agrícola. </p>
+
+                    <h5><b>Alcalinidad</b></h5>
+                    <p>Propiedad de un líquido que es ácido o alcalino, en función de su pH. </p>
+
+                    <h5><b>Desagüe</b></h5>
+                    <p> Sistema que permite el desahogo de aguas pluviales y resíduos sólidos.                               
+                        
+                    <h5><b>Turbiosidad</b></h5>
+                    <p>Nivel de claridad del agua, medido en unidad NTU (unidades Nephelometría Turbídímetros).</p>   
+
+                    <h5><b>Condensación</b></h5>
+                    <p> Proceso en el que un vapor se convierte en líquido a través de la reducción de la temperatura.</p> 
+                     
+                    <h5><b>Sedimentación</b></h5>
+                    <p>Separación del agua de los sólidos suspendidos mediante la gravedad.  </p>
+
+                    <h5><b>Microorganismos</b></h5>
+                    <p>Seres vivos microscópicos que pueden vivir en el agua.</p>
+ 
+                    <h5><b>Agua residual</b></h5>
+                    <p>Agua desechada por una comunidad o industria tras ser usada.</p>
+
+                    <h5><b>Osmosis</b></h5>
+                    <p>Proceso que permite que un líquido pase a través de una membrana selectiva.</p>
+
+                    <h5><b>Vapor de agua</b></h5>
+                    <p>Nubes de partículas de agua, sólidos o gases.</p>
+
+                    <h5><b> Abrevadero</b></h5>
+                    <p>Lugar donde las personas, animales o maquinaria se abastecen de agua.</p>
+
+                    <h5><b>Casa de agua</b></h5>
+                    <p>Estructura que aloja un pozo y maquinaria para captar agua.</p>
+
+                    <h5><b>Conducto</b></h5>
+                    <p>Sistema de conducción, tratamiento y distribución de agua potable. </p>
+
+                    <h5><b>Espesor de camino</b></h5>
+                    <p>Medida de la cantidad de agua transportada en un acueducto.</p>
+
+                    <h5><b>Cano</b></h5>
+                    <p>Conducto de agua largo y estrecho.</p>
+
+                    <h5><b>Canaleta</b></h5>
+                    <p>Conducto pequeño de agua.</p>
+
+                    <h5><b>Dique</b></h5>
+                    <p>Recipiente de agua que sirve de almacén.</p>
+
+                    <h5><b>Dispositivo de descontaminación</b></h5>
+                    <p>Un mecanismo que elimina contaminantes de una agua.</p>
+
+
+
+                     
+                    
                       
                     </div>
                 </div>

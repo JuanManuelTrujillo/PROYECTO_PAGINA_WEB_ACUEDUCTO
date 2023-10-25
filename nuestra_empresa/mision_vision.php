@@ -145,8 +145,7 @@
 <div class="container-fluid blog py-5 my-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Somos una empresa industrial y comercial del estado del orden municipal prestadora de servicios públicos domiciliarios de acueducto, alcantarillado, aseo y servicios complementarios en el municipio de zipaquirá cundinamarca, dotada de personería jurídica con autonomía administrativa, financiera y patrimonio propio e independiente, constituido con bienes y fondos públicos comunes, los productos de ellos, y el rendimiento de tasas que perciba por los servicios, funciones y contribuciones por destinación especial en los casos autorizados por la constitución nacional. Nos respaldan 25 años de experiencia al servicio de los zipaquireños apoyados en el profesionalismo y dedicación de nuestros funcionarios, prestando adicionalmente el servicio de acueducto a los municipios de cogua y nemocón garantizando calidad y mejora,lo cual se refleja en la obtención varias certificaciones ( normas iso 9001:2008 y ntcgp1000:2009)</h5>
-        </div>
+            <h5 class="text-primary">Somos una Junta Administradora que se  rige por los principios de transparencia, ética y buena gobernanza, y se esfuerza por proporcionar un servicio integral de calidad a todos los ciudadanos de la zona. </div>
         <div class="row g-5 justify-content-center">
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
@@ -154,11 +153,13 @@
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Misión</span>
 
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-
+                         <br>
                         <br>
-                        <p class="py-2">La misión de una empresa se define como la razón principal por la cual esta existe, es decir, cuál es su propósito u objetivo y cuál es su función dentro de la sociedad. De esta manera, la misión de una empresa permite establecer la base de su plan de negocios y construir estrategias de mercado coherentes, ya que cualquier decisión para llegar a una meta futura debe tomarse a partir de esta misma. Una misión bien definida debería ser breve, concisa y fácil de comprender para el público objetivo. Asimismo, debe responder a cuestiones como: ¿qué hacemos?, ¿por qué lo hacemos? o ¿para quién lo hacemos?, diferenciándose de su competencia. De hecho, la misión puede convertirse en un lema inspirador para los trabajadores.</p>
-                    </div>
-                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                        <p class="py-2">Nuestra misión es  promover un ambiente laboral saludable,  capacitar y desarrollar a sus recursos humanos para poder  garantizar el suministro de agua potable y segura a todos los habitantes del centro poblado  La Jagua de manera económica, eficiente y sostenible.                    </div>
+                    <br>
+                    <br>
+                
+                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
                    <br>
                     </div>
                 </div>
@@ -170,7 +171,11 @@
 
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
                       <br>
-                        <p class="py-2">Es común confundir la misión y la visión de una empresa, aunque son dos conceptos diferentes. Por un lado, la misión, como ya hemos definido, es la razón de ser, pero, en cambio, la visión se refiere a dónde se dirige esta compañía y cuáles son sus metas a medio y largo plazo. La visión permite definir el camino que se debe seguir para alcanzar las metas propuestas. Para ello, debe representar de una forma clara y realista los principios que dan una identidad a esta empresa y responder a cuestiones como: ¿qué se desea lograr?, ¿hacia dónde nos dirigimos?, ¿dónde queremos estar en un futuro? y ¿cómo lo conseguiremos? Además, a diferencia de la misión, su definición puede tener una mayor longitud, aunque lo mejor es ser breve, destacando los puntos realmente importantes.</p>
+                      <br>
+                    <p class="py-2">El centro poblado de La Jagua tiene como objetivo brindar un servicio de agua potable y saneamiento eficiente y de calidad para el beneficio de la población de la región, con un enfoque sostenible y respetuoso con el medio ambiente
+será un lugar donde todos los habitantes dispondrán de agua potable y segura a largo plazo.
+                     </p>
+               
                     </div>
                     <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
                         <br>

@@ -180,8 +180,8 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Leyes</strong></a> </li>
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Decreto unico reglamento</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor.html"><strong> Leyes</strong></a> </li>
+                        <li> <a class="dropdown-item" href="contrato.pdf"><strong> contrato de uniformidades</strong></a> </li>
                         <li> <a class="dropdown-item" href="pdf.html"><strong> Normativa aplicable</strong></a> </li>
                     </ul>
                     </div>
@@ -229,7 +229,7 @@
                 <div class="accordion-body">
                     <ul>
                  
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Leyes</strong></a> </li>
+                        <li> <a class="dropdown-item" href="tarifaz.pdf"><strong> tarifaz</strong></a> </li>
                         <li> <a class="dropdown-item" href="pdf.html"><strong> Decreto unico reglamento</strong></a> </li>
                         <li> <a class="dropdown-item" href="pdf.html"><strong> Normativa aplicable</strong></a> </li>
               

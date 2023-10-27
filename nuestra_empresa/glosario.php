@@ -141,13 +141,20 @@
         </div>
         <!-- Page Header End -->
   <!-- About Start -->
-  <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
+   <!-- About Start -->
+   <div class="container-fluid py-5 my-5">
+            <div class="container pt-5">
                 <div class="row g-5">
-
-                    <div class="col-lg-10 col-md-4 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        
-                    
+                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 position-relative">
+                            <img src="img/glosario1.jpeg" class="img-fluid w-75 rounded" alt="Imagenes de la historia" style="margin-bottom: 18%;">
+                            <img src="img/glosario2.jpg" class="img-fluid w-75 rounded" alt="Imagenes de la historia" style="margin-bottom: 18%;">
+                            <img src="img/glosario3.jpg" class="img-fluid w-75 rounded" alt="Imagenes de la historia" style="margin-bottom: 18%;">
+                            <img src="img/glosario4.jpg" class="img-fluid w-75 rounded" alt="Imagenes de la historia" style="margin-bottom: 18%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                     
                     <h5><b>Acueducto</b></h5>
                     <p>Sistema de conducción, tratamiento y distribución de agua potable.   </p>  
 
@@ -208,11 +215,6 @@
                     <h5><b>Dispositivo de descontaminación</b></h5>
                     <p>Un mecanismo que elimina contaminantes de una agua.</p>
 
-
-
-                     
-                    
-                      
                     </div>
                 </div>
             </div>

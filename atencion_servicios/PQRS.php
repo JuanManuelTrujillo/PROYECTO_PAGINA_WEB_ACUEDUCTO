@@ -158,7 +158,7 @@
                                 <div class="services-content-icon">
                                     <h4 class="mb-3">Registra tu petición</h4>
                                     <img class="img-icon-hover" alt="Petición" src="img/peticion.png "  style="max-width: 120px; " >
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <p class="mb-4"> El módulo de petición permite a los usuarios realizar y enviar peticiones a la entidad de gestión.</p>
                                     <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enviar</a>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                                 <div class="services-content-icon">
                                     <h4 class="mb-3">Registra tu queja</h4>
                                     <img class="img-icon-hover" alt="Petición" src="img/queja.png "  style="max-width: 120px; " >
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <p class="mb-4">El módulo de queja permite a los usuarios registrar sus quejas, observaciones y comentarios sobre los servicios brindados por la entidad de gestión.</p>
                                     <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enviar</a>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                                 <div class="services-content-icon">
                                     <h4 class="mb-3">Registra tu reclamo</h4>
                                     <img class="img-icon-hover" alt="Petición" src="img/reclamo.png "  style="max-width: 120px; " >
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <p class="mb-4"> El módulo de reclamo permite a los usuarios registrar sus reclamos y solicitudes de resolución de problemas en relación con los servicios brindados por la entidad de gestión.</p>
                                     <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enviar</a>
                                 </div>
                                 
@@ -193,9 +193,9 @@
                         <div class="services-item bg-light">
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
-                                    <h4 class="mb-3">Registra tu solicitud</h4>
+                                    <h4 class="mb-3">Registra tu sugerencias</h4>
                                     <img class="img-icon-hover" alt="Petición" src="img/consulta.png "  style="max-width: 120px; " >
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                    <p class="mb-4">El módulo de sugerencias permite a los usuarios enviar sugerencias, ideas, propuestas o opiniones sobre la entidad de gestión.</p>
                                     <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enviar</a>
                                 </div>
                             </div>

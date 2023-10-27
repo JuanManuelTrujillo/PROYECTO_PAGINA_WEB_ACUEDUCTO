@@ -141,10 +141,10 @@
           <div class="container-sm">
               <center><h2>Acueducto</h2></center>
             
-             <center> <img src="img/DRENAJE.jpg" class="img-fluid" alt="..."></center>
+             <center> <img src="img/004.jpeg" class="img-fluid" alt="..."></center>
              <hr>
              <center><h2>Alcantarillado</h2></center>
-             <center> <img src="img/DRENAJE.jpg" class="img-fluid" alt="..."></center>
+             <center> <img src="img/005.jpeg" class="img-fluid" alt="..."></center>
           </div>
           <br>
 <!-- Fin Contenido -->

@@ -153,7 +153,7 @@
                 <div class="row g-5 justify-content-center">
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="../img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/presencial.png" class="img-fluid w-100 rounded-top" alt="">
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Presencial</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                               <br>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="../img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="img/virtual.jpg" class="img-fluid w-100 rounded-top" alt="">
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Virtual</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                     <br>

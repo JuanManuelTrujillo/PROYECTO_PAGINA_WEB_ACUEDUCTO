@@ -149,7 +149,7 @@
         <div class="row g-5 justify-content-center">
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
                 <div class="blog-item position-relative bg-light rounded">
-                    <img src="../img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="img/mision.jpeg" class="img-fluid w-100 rounded-top" alt="">
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Misión</span>
 
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
@@ -166,7 +166,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                 <div class="blog-item position-relative bg-light rounded">
-                    <img src="../img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="img/vision.jpg" class="img-fluid  rounded-top" alt="">
                     <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Visión</span>
 
                     <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">

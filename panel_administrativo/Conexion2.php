@@ -3,7 +3,7 @@
 $Localhost = '127.0.0.1';
 $Usuario_BD = 'root';
 $Password_BD = 'root';
-$Nombre_BD = 'card';
+$Nombre_BD = 'img';
 
 try{
   $DB_con = new PDO("mysql:host={$Localhost};dbname={$Nombre_BD};charset=UTF8",$Usuario_BD,$Password_BD);

@@ -94,7 +94,7 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="../atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
-                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
+                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRS</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">

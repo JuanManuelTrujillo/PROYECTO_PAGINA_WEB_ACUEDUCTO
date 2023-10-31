@@ -93,7 +93,7 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Atención y Servicios</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="../atencion_servicios/canales.php" class="dropdown-item">Canales de Atención</a>
-                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRSD</a>
+                                    <a href="../atencion_servicios/PQRS.php" class="dropdown-item">PQRS</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
@@ -139,12 +139,9 @@
         <!-- Inicio Conteido -->
         <br>
   <div class="container-sm">
-
-
-
-<hr>
-
-<center> <img src="img/abastecimiento.jpg" class="img-fluid" alt="..." style="width: 60%;"></center>
+<img src="img/abas.png" class="img-fluid w-100 rounded" alt="..." >
+<br>
+<br>
 <p>Los sistemas de abastecimiento están compuestos de sistemas de captación en nuestro caso de la quebrada Agua caliente, sistemas de distribución (tuberías), sistemas de almacenamiento (tanques concreto) y producción (planta de tratamiento).</p>
 <div class="card">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

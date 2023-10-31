@@ -86,7 +86,6 @@
                                     <a href="../nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
                                     <a href="../nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
                                     <a href="../nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="../nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
                                     <a href="../nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>

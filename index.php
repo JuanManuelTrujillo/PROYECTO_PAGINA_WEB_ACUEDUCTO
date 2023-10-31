@@ -85,7 +85,6 @@
                                     <a href="nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
                                     <a href="nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
                                     <a href="nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
                                     <a href="nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>
@@ -155,134 +154,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
 
-                <?php
-// Archivo de conexion con la base de datos
-require_once 'panel_administrativo/Conexion2.php';
-// Condicional para validar el borrado de la imagen
-if(isset($_GET['delete_id']))
-{
-	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
-	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
-	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
-	// Ruta de la imagen
-	unlink("imagenes/".$imgRow['Imagen_Img']);
-	
-	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
-	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
-	$stmt_delete->execute();
-	// Redireccioa al inicio
-	header("Location: index.php");
-}
 
-?>
-
-
-
-<link rel="stylesheet" href="panel_administrativo/bootstrap/css/bootstrap.min.css">
-
-
-
-
-</head>
-
-<body>
-
- 
-</div>
-<div class="container">
-  <div class="page-header">
-
-  </div>
-  <br />
-  <div class="">
-    <?php
-	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
-	$stmt->execute();
-	
-	if($stmt->rowCount() > 0)
-	{
-		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
-		{
-			extract($row);
-			?>
-    <div class=" col-sm-3">
-
-	
-  <div class="tarjeta">
-<div class="titulo">
-	<center><h3 class="" >
-	<?php echo $Imagen_Marca."&nbsp;
-	  &nbsp;" ?></h3></center></div>
-<div class="cuerpo">
-<img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
-
-<p class="d-inline-flex gap-1">
-</p>
-
-<details style="font-size:15px">
-        <summary style="font-size:15px" >ver noticia</summary>
-        <p >
-            
-	<?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
-        </p>
-    </details>
-
-
-
- 
-
-
-</div>
-
-
-<div class="pie">
-<!-- Button trigger modal -->
-
-
-
-</div>
-</div>
-     <br>
-	 
-    </div>
-	
-    <?php
-		}
-	}
-	else
-	{
-		?>
-    <div class="col-sm-12">
-      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
-    </div>
-    <?php
-	}
-	
-?>
-
-
-
-
-
-                </div>
-             
-
-             </div>
-               
-<!-- Archivo de conexion con la base de datos
-
-          
-        <!-- Carousel End -->
-
-
-
-
-
-
-       <hr>
 
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">

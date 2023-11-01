@@ -170,18 +170,7 @@
   
   <div class="container-sm">
   
-      <p>Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo),
-           Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo)
-           Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo)
-           Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo)
-           Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo)
-           Definición de agua. El agua es una sustancia que se compone por dos átomos de hidrógeno
-           y un átomo de oxígeno (H2O) y se puede encontrar en estado sólido (hielo)</p>
+      <p> El sistema de drenaje del Acueducto de la Jagua es el conjunto de infraestructura, normas y procedimientos que buscan mantener un nivel adecuado de agua en las carreteras, calles y áreas verdes, reducir el riesgo de inundaciones, y garantizar la salud pública de la población.</p>
           </div>
           <br>
   

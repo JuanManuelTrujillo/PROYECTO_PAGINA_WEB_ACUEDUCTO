@@ -166,7 +166,7 @@
         <div class="container-fluid project py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h2 class="text-primary">Galería de fotos</h2>
+                    <h2 class="text-primary">Galería de fotos antiguas</h2>
                    
                 </div>
                 <div class="row g-5">
@@ -176,8 +176,8 @@
                                 <img src="img/h1.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web design</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
+                                        <p class="m-0 text-white">Instalación tuberia</p>
+                                        <p class="m-0 text-white">PVC desde la bocatoma</p>
                                     </a>
                                 </div>
                             </div>
@@ -189,8 +189,8 @@
                                 <img src="img/h2.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Cyber Security</h4>
-                                        <p class="m-0 text-white">Cyber Security Core</p>
+                                        <p class="m-0 text-white">Construnción del</p>
+                                        <p class="m-0 text-white">segundo tanque</p>
                                     </a>
                                 </div>
                             </div>
@@ -202,8 +202,8 @@
                                 <img src="img/h3.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Mobile Info</h4>
-                                        <p class="m-0 text-white">Upcomming Phone</p>
+                                        <p class="m-0 text-white">Encofrado del</p>
+                                        <p class="m-0 text-white">segundo tanque</p>
                                     </a>
                                 </div>
                             </div>
@@ -215,8 +215,8 @@
                                 <img src="img/h4.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web Development</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
+                                        <p class="m-0 text-white">Armado de</p>
+                                        <p class="m-0 text-white">estructura de acero</p>
                                     </a>
                                 </div>
                             </div>
@@ -228,8 +228,8 @@
                                 <img src="img/h5.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Digital Marketing</h4>
-                                        <p class="m-0 text-white">Marketing Analysis</p>
+                                        <p class="m-0 text-white">Columna soporte para</p>
+                                        <p class="m-0 text-white">red de PVC elevada</p>
                                     </a>
                                 </div>
                             </div>
@@ -241,8 +241,8 @@
                                 <img src="img/h6.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">keyword Research</h4>
-                                        <p class="m-0 text-white">keyword Analysis</p>
+                                        <p class="m-0 text-white">Fundición placa</p>
+                                        <p class="m-0 text-white">de concreto</p>
                                     </a>
                                 </div>
                             </div>

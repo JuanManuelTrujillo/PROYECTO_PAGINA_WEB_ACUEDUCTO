@@ -164,7 +164,7 @@
                                 
                             </div>
                             <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                                <a href="" class="text-white"><small><i class="bi bi-house-fill me-2 text-secondary"></i>Calle 4 número 2- Barrio San José La Jagua Huila</small></a>
+                                <a href="https://www.google.com/maps/@2.1669501,-75.6789125,3a,75y,185.45h,82.57t/data=!3m6!1e1!3m4!1sCyGpC4DQUquZq9P-7WEfxw!2e0!7i13312!8i6656?entry=ttu" target="_blank" class="text-white"><small><i class="bi bi-house-fill me-2 text-secondary"></i>Calle 4 número 2- Barrio San José La Jagua Huila</small></a>
                                
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                             </div>
                             <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
                                 <a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="text-white"><small><i class="bi bi-envelope-fill me-2 text-secondary"></i>Email</small></a>
-                                <a href="https://web.whatsapp.com/" class="text-white"><small><i class="bi bi-whatsapp me-2 text-secondary"> </i>WhatsApp</small></a>
+                                <a href="https://wa.me/+573227324944" target="_blank" class="text-white"><small><i class="bi bi-whatsapp me-2 text-secondary"> </i>WhatsApp</small></a>
                             </div>
                         </div>
                     </div>

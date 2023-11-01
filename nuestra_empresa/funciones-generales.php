@@ -136,23 +136,49 @@
         <!-- Page Header End -->
 
         <div class="container-sm">
-           <br>
-            <h2> Objetivo Social </h2>
-                    <p> Asegurar el acceso a agua potable de buena calidad y en cantidad suficiente para la población del centro poblado. </p>
-                    <p> Mejorar la infraestructura de suministro y distribución de agua potable, para garantizar su eficiencia y eficacia. </p>
+           <br> <br>
+                  <center><h3> DERECHOS, OBLIGACIONES Y PROHIBICIONES A LOS SUSCRIPTORES </h3></center>  
+                    <br>
+                    <h4>Artículo 10°</h4>
+                    <p>-Son derechos de los suscriptores, además de los establecidos en la Ley 142 de 1.994, Régimen de servicios públicos domiciliarios, decretos y resoluciones reglamentarios contenidos en la Comisión de Regulación de Agua potable y saneamiento básico. (CRA) y el Contrato de condiciones uniformes (CCU), los siguientes:</p>
 
-                    <h2>Funciones Generales</h2>
+                   
+                    <p>a. Participar con voz y voto en la Asamblea General de Suscriptores.</p>
+                    <p>b. Elegir y ser elegido para los cargos directivos y representativos de la Junta Administradora del Acueducto y Alcantarillado de La Jagua.</p>
+                    <p>c. Examinar la contabilidad, los libros, las actas, en general, todos los documentos soportes de la Junta Administradora del Acueducto y Alcantarillado de La Jagua.</p>
+                    <p>d. Participar en las actividades, beneficios y servicios que la Junta Administradora del Acueducto y Alcantarillado de La Jagua presta a sus suscriptores, los cuales no podrán consistir en ningún caso, en el reparto de utilidades.</p>
+                    <p>e. Excusar, representar o hacerse representar por escrito en la Asamblea General, ya sea de carácter ordinaria o extraordinaria.</p>
 
-                    <p> - Transmitir agua de forma segura y eficiente.</p>
-                    <p> - Proteger el medio ambiente.</p>
-                    <p> - Proteger la salud de la población.</p>
-                    <p> - Garantizar el acceso a agua potable.</p>
-                    <p> - Lograr un manejo adecuado del agua, incluyendo su regulación, conservación y uso.</p>
+                    <h4>Artículo 11°</h4>
+                    <p>-Son obligaciones de los suscriptores, además de los establecidos en la Ley 142 de 1.994, Régimen de servicios públicos domiciliarios, decretos y resoluciones reglamentarios contenidos en la Comisión de Regulación de Agua potable y saneamiento básico. (CRA) y el Contrato de condiciones uniformes (COU), los siguientes:</p>
 
+                   
+                    <p>a. Cumplir los presentes Estatutos y Reglamentos adoptados por la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua</p>
+                    <p>b. Acatar las decisiones de la Asamblea General y de la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua.</p>
+                    <p>c. Participar en la Asamblea General y demás reuniones informativas.</p>
+                    <p>d. Desempeñar con responsabilidad las funciones propias de los cargos Directivos y Representativos de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, para los cuales sean elegidos.</p>
+                    <p>e. Dar a los bienes de la Junta Administradora del Acueducto y Alcantarillado de La Jagua el uso correcto para el cual están destinados, velando siempre por su conservación y perfecto mantenimiento.</p>
+                    <p>f. Cumplir con las obligaciones económicas y sociales que se establezcan.</p>
+                    <p>g. Participa en los comités que designe la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, para la vigilancia de las obras construidas además el cuidado y recuperación de las cuencas hidrográficas.</p>
+                    <p>h. Colaborar activamente en las campañas de reforestación y en general, contribuir con el cuidado y conservación del medio ambiente.</p>
 
+                    <h4>Artículo 12°</h4>
+                    <p>-Conforme a la ley y los presentes Estatutos a los suscriptores de los servicios les está prohibido además de lo estipulado en el contrato de condiciones uniformes lo siguiente:</p>
 
-
-            
+                   
+                    <p>a. Utilizar el nombre de la Junta Administradora del Acueducto y Alcantarillado de La Jagua para adelantar campañas politicas, religiosas o de cualquier otra indole, ajenas a los objetivos generales de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, señalados en el articulo 7° de los presente Estatutos.</p>
+                    <p>b. Ejercer presión sobre cualquier suscriptor o miembro de la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, con el fin de desviar el objeto social de la organización o violar los presentes Estatutos.</p>
+                    <p>c. Atentar y provocar daños contra cualquier parte del sistema del acueducto o alcantarillado o en detrimento del entorno ecológico que da vida a los mismos.</p>
+                    <p>d. Desarrollar actividades que perjudiquen la Junta Administradora del Acueducto y Alcantarillado de La Jagua y el normal desarrollo de sus actividades.</p>
+                    
+                    <h4>Artículo 13°</h4>
+                    <p>-Quienes Incurran en alguno de los actos señalados en el Artículo 12, o incumplan con las obligaciones anteriormente señaladas, se someterán a las sanciones que establece el presente Estatuto y el Contrato de Condiciones Uniformes.(CCU)</p>
+                   
+                    <h4>Artículo 14°</h4>
+                    <p>- En caso de reincidencia en las infracciones señaladas en este Estatuto y en el Contrato de Condiciones Uniformes(CCU), la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, podrá ordenar la suspensión indefinida de los servicios. Esta reincidencia deberá ser puesta a consideración de la Asamblea General de suscriptores. El suscriptor podrá interponer dentro de los (5) cinco días hábiles siguientes a la resolución de sanción, recurso de reposición ante la Directiva de la Junta Administradora del Acueducto y Alcantarillado de La Jagua, quién deberá resolverlo dentro de los (5) cinco días hábiles siguientes a la presentación y recurso de apelación ante la Asamblea General, quien decidirá en forma definitiva.</p> 
+                    
+                    <h4>Artículo 15°</h4>
+                    <p>-La Junta Directiva podrá delegar en el administrador o quién haga sus veces, el recaudo de las sanciones impuestas a los suscriptores que infrinjan el presente Estatuto, los reglamentos y normas que lo complementen.</p>
                 </div>
                 <br>
 <!-- Fin Contenido -->

@@ -46,6 +46,17 @@ include "panel_administrativo/conexion_carrusel.php";
     </head>
 
     <body>
+    <style>
+        body {
+            background-image: url('img/fondo (2).jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+       
+    </style>
+
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
@@ -176,6 +187,125 @@ include "panel_administrativo/conexion_carrusel.php";
 </div>
 
 
+                <?php
+// Archivo de conexion con la base de datos
+require_once 'panel_administrativo/Conexion_noticia.php';
+// Condicional para validar el borrado de la imagen
+if(isset($_GET['delete_id']))
+{
+	// Selecciona imagen a borrar
+	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
+	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+	// Ruta de la imagen
+	unlink("imagenes/".$imgRow['Imagen_Img']);
+	
+	// Consulta para eliminar el registro de la base de datos
+	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
+	$stmt_delete->execute();
+	// Redireccioa al inicio
+	header("Location: index.php");
+}
+
+?>
+
+
+<center><h1>Noticias</h1></center>
+<hr>
+</div>
+<div class="container">
+  <div class="">
+
+  <link rel="stylesheet" href="panel_administrativo/bootstrap/css/bootstrap.min.css">
+  </div>
+  <br />
+  <div class="">
+    <?php
+	
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+	$stmt->execute();
+	
+	if($stmt->rowCount() > 0)
+	{
+		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+		{
+			extract($row);
+			?>
+    <div class=" col-sm-3">
+
+	
+  <div class="tarjeta">
+<div class="titulo">
+	<center><h3 class="" >
+	<?php echo $Imagen_Marca."&nbsp;
+	  &nbsp;" ?></h3></center></div>
+<div class="cuerpo">
+<img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
+
+<p class="d-inline-flex gap-1">
+</p>
+
+<details style="font-size:15px">
+        <summary style="font-size:15px" >ver noticia</summary>
+        <p >
+            
+	<?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
+        </p>
+    </details>
+
+
+
+ 
+
+
+</div>
+
+
+<div class="pie">
+<!-- Button trigger modal -->
+
+
+
+</div>
+</div>
+     <br>
+	 
+    </div>
+	
+    <?php
+		}
+	}
+	else
+	{
+		?>
+    <div class="col-sm-12">
+      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+    </div>
+    <?php
+	}
+	
+?>
+
+
+
+
+
+                </div>
+             
+
+             </div>
+
+
+
+
+
+ 
+
+
+
+
+       <hr>
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">

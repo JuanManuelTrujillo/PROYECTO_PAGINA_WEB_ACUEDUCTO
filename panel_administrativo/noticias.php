@@ -36,7 +36,7 @@
 
 	error_reporting( ~E_NOTICE ); // avoid notice
 	
-	require_once 'Conexion2.php';
+	require_once 'Conexion_noticia.php';
 	
 	if(isset($_POST['btnsave']))
 	{
@@ -113,9 +113,9 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
 <!-- Latest compiled and minified JavaScript -->
-<script src="bootstrap/js/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -143,11 +143,11 @@
     <table class="table table-bordered table-responsive">
       <tr>
         <td><label class="control-label">Titulo</label></td>
-        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese nombre y Apellido" value="<?php echo $username; ?>" /></td>
+        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese nombre y Apellido" value="" /></td>
       </tr>
       <tr>
         <td><label class="control-label">Descripcion</label></td>
-        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese tipo de rool" value="<?php echo $userjob; ?>" /></td>
+        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese tipo de rool" value="" /></td>
       </tr>
       <tr>
         <td><label class="control-label">Imágen.</label></td>
@@ -160,7 +160,7 @@
   </form>
   <?php
 // Archivo de conexion con la base de datos
-require_once 'Conexion2.php';
+require_once 'Conexion_noticia.php';
 // Condicional para validar el borrado de la imagen
 if(isset($_GET['delete_id']))
 {
@@ -181,18 +181,16 @@ if(isset($_GET['delete_id']))
 
 ?>
 >
-<!DOCTYPE html>
-<html lang="es">
-<head>
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
 <title>acueducto</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-<script src="bootstrap/js/jquery.min.js"></script>
+
+
+
 <link rel="stylesheet" href="">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -243,7 +241,7 @@ if(isset($_GET['delete_id']))
 	<?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
         </p>
     </details>
-	<p class="page-header"> <span> <a class="btn btn-info" href="EditarImagen.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
+	<p class="page-header"> <span> <a class="btn btn-info" href="Editar_noticia.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
 
 
 
@@ -285,7 +283,7 @@ if(isset($_GET['delete_id']))
 
 
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 

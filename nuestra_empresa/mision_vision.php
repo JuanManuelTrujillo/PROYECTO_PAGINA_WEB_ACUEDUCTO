@@ -47,17 +47,17 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Topbar Start -->
-        <div class="info container-fluid py-2 d-md-flex">
+       <!-- Topbar Start -->
+       <div class="info container-fluid py-2 d-md-flex">
             <div class="container">
                 <div class="d-flex justify-content-between topbar">
                     <div class="top-info">
-                        <small class="text-tobar-direct me-3 text-light-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Calle 4 número 2- Barrio San José La Jagua Huila</small>
-                        <small class="text-tobar me-3 text-light-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>acueductoalcant_lajagua@hotmail.com</small>
+                        <small class="text-tobar-direct me-3 text-light-50"><a href="https://www.google.com/maps/@2.1669501,-75.6789125,3a,75y,185.45h,82.57t/data=!3m6!1e1!3m4!1sCyGpC4DQUquZq9P-7WEfxw!2e0!7i13312!8i6656?entry=ttu" target="_blank"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Calle 4 número 2- Barrio San José La Jagua Huila</small>
+                        <small class="text-tobar me-3 text-light-50"><a href="mailto:acueductoalcant_lajagua@hotmail.com"><i class="fas fa-envelope me-2 text-secondary"></i></a>acueductoalcant_lajagua@hotmail.com</small>
                     </div>
                     <div class="top-link">
-                        <a href="" class="ico-topbar bg-secondary nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-whatsapp"></i></a>
-                        <a href="" class="ico-topbar bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="https://wa.me/+573227324944" target="_blank" class="ico-topbar bg-secondary nav-fill btn btn-sm-square rounded-circle"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="ico-topbar bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
                     </div>
                 </div>
             </div>
@@ -188,9 +188,7 @@ será un lugar donde todos los habitantes dispondrán de agua potable y segura a
 <!-- Blog End -->
 
       
-      
-      
-<!-- Footer Start -->
+    <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
@@ -200,32 +198,32 @@ será un lugar donde todos los habitantes dispondrán de agua potable y segura a
                     <div class="col-lg-3 col-md-6">
                         <p class="mt-4 text-light">La Junta Administradora del acueducto y alcantarillado de La Jagua es una entidad Sin Ánimo de Lucro obtuvo su personería jurídica el 21 de febrero de 1995.</p>
                         <div class="d-flex hightech-link">
-                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-whatsapp text-primary"></i></a>
+                            <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="https://wa.me/+573227324944" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="bi bi-whatsapp text-primary"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Horarios de Atención</a>
                         <div class="mt-4 d-flex flex-column short-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Lunes a Viernes</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>8:00 am a 12:00 pm</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>3:00 pm a 5:00 pm</a>
+                            <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Lunes a Viernes</a>
+                            <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>8:00 am a 12:00 pm</a>
+                            <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>3:00 pm a 5:00 pm</a>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Puntos de Recaudo</a>
                         <div class="mt-4 d-flex flex-column help-link">
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Papeleria Pipelin:</b> Calle 4 número 5-21 Barrio San José</a>
-                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Corresponsal Bancolombia:</b> Calle número 5 3-25 Barrio San Martín</a>
+                            <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Papeleria Pipelin:</b> Calle 4 número 4 Barrio San José</a>
+                            <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i><b>Corresponsal Bancolombia:</b> Calle 5 número 5 Barrio San Martín</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Contactos</a>
                         <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Calle 4 número 2- Barrio San José La Jagua Huila</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>3227324944</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>acueductoalcant_lajagua @hotmail.com</a>
+                            <a href="https://www.google.com/maps/@2.1669501,-75.6789125,3a,75y,185.45h,82.57t/data=!3m6!1e1!3m4!1sCyGpC4DQUquZq9P-7WEfxw!2e0!7i13312!8i6656?entry=ttu" target="_blank" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Calle 4 número 2- Barrio San José La Jagua Huila</a>
+                            <a href="https://wa.me/+573227324944" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i>3227324944</a>
+                            <a href="mailto:acueductoalcant_lajagua@hotmail.com" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>acueductoalcant_lajagua @hotmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -236,14 +234,13 @@ será un lugar donde todos los habitantes dispondrán de agua potable y segura a
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span class="text-light">Diseñado Por <a href="#" class="text-secondary">ADSO 2502629 </a>CADPH Garzón Huila</span>
+                        <span class="text-light">Diseñado Por <a href="https://adsosena.com/" target="_blank" class="text-secondary">ADSO 2502629 </a>CADPH Garzón Huila</span>
 
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
-
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>

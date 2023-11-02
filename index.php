@@ -99,13 +99,11 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
                                     <a href="acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
                                     <a href="acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
                                     <a href="acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
@@ -131,19 +129,33 @@
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Third slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Fourt slide"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="img/tic.jpg" class="img-fluid" alt="First slide">
+                        <img src="img/1.png" class="img-fluid" alt="First slide">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/colombia.jpg" class="img-fluid" alt="Second slide">
+                        <img src="img/2.png" class="img-fluid" alt="Second slide">
                         <div class="carousel-caption">
                         </div>
                     </div>
+                     <!-- Yuli -->
+                    <div class="carousel-item">
+                        <img src="img/3.png" class="img-fluid" alt="Third slide">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/4.png" class="img-fluid" alt="Fourt slide">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <!-- Yuli -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

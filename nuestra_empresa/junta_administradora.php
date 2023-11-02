@@ -101,13 +101,11 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="../acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="../acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
                                     <a href="../acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="../acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
                                     <a href="../acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
                                     <a href="../acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
@@ -156,7 +154,7 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="../img/ja.png" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="../img/andres.png" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="text-primary">JESUS ALEXANDER NARANJO  </h4>
@@ -198,7 +196,7 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
-                                    <img src="../img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                    <img src="../img/juan.png" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">ARCADIO TRUJILLO SANCHEZ</h4>

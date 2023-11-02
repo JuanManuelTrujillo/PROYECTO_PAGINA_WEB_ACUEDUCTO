@@ -101,13 +101,11 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
                                     <a href="abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="../acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
                                     <a href="../acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
                                     <a href="../acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
@@ -144,26 +142,28 @@
   <div class="container-sm">
       
 
-      <p>Una LAGUNA DE OXIDACIÓN es una excavación de poca profundidad en la cual se desarrolla una población microbiana compuesta por bacterias, algas y protozoos que conviven en forma simbiótica y eliminan en forma natural los patógenos relacionados con la materia orgánica.
-        En el tratamiento de las aguas servidas, se llaman lagunas aeróbicas o lagunas de oxidación, cuando se usa el oxígeno molecular disuelto como aceptador de electrones, el proceso es aeróbico y se conoce también como respiración aeróbica
-     </p>
+      <p> Una laguna de oxidación es una instalación en el sistema de tratamiento de agua, que funciona a través de un proceso natural de oxidación que transforma y remueve los contaminantes presentes en el agua. La oxidación es el proceso químico en el que los átomos de oxígeno se adhieren a los contaminantes para eliminarlos. </p>
      <br>
+     <h3 class="text-primary">Funcionalidades:</h3>
+     <p>Primero, el agua es recibida en la laguna.</p>
+     <p>Luego, el agua circula en la laguna mientras las bacterias oxidan los contaminantes.</p>
+     <p>Después, la laguna va eliminando los contaminantes, y el agua se libera de partículas sólidas.</p>
   <!-- Project Start -->
   <div class="container-fluid project py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h2 class="text-primary">Galeria</h2>
+                    <h2 class="text-primary">Fotos de Lagunas de Oxidacion</h2>
                     
                 </div>
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/h1.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/jagua.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web design</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
+                                        <h4 class="text-secondary">La Jagua</h4>
+                                        <p class="m-0 text-white">Departamento del Huila</p>
                                     </a>
                                 </div>
                             </div>
@@ -172,11 +172,11 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/h2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/laguna.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Cyber Security</h4>
-                                        <p class="m-0 text-white">Cyber Security Core</p>
+                                        <h4 class="text-secondary">Galapa </h4>
+                                        <p class="m-0 text-white">Departamento del Atlántico</p> 
                                     </a>
                                 </div>
                             </div>
@@ -185,55 +185,19 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/h3.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/garzon.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Mobile Info</h4>
-                                        <p class="m-0 text-white">Upcomming Phone</p>
+                                        <h4 class="text-secondary">PTAR Garzón</h4>
+                                        <p class="m-0 text-white">Proceso de construcción</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/h4.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web Development</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/h5.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Digital Marketing</h4>
-                                        <p class="m-0 text-white">Marketing Analysis</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/h6.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">keyword Research</h4>
-                                        <p class="m-0 text-white">keyword Analysis</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
                 </div>
             </div>
         </div>

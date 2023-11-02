@@ -101,13 +101,11 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
-                                    <a href="plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
                                     <a href="abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="../acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
-                                    <a href="../acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
                                     <a href="../acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
                                     <a href="../acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
@@ -145,8 +143,9 @@
 <br>
 <p>Los sistemas de abastecimiento están compuestos de sistemas de captación en nuestro caso de la quebrada Agua caliente, sistemas de distribución (tuberías), sistemas de almacenamiento (tanques concreto) y producción (planta de tratamiento).</p>
 <div class="card">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-           <a href="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe"></a>
+           
+                <iframe width="1300" height="315" src="https://www.youtube.com/embed/er9rNEqDEWQ?si=zfQUcqmhLjtqppiP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/embed/kanMvvAQEgE?si=WCIepoTJ1GUnmqIe"></a>
         </div>
 </div>
 <br>

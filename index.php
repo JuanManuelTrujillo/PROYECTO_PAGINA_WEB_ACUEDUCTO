@@ -1,3 +1,7 @@
+<?php
+include "panel_administrativo/conexion_carrusel.php";
+ $images = get_imgs();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -31,6 +35,8 @@
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -99,11 +105,13 @@
                                 <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acueducto y Alcantarillado</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="acueducto_alcantarillado/infraestructura.php" class="dropdown-item">Infraestructura del Acueducto</a>
+                                    <a href="acueducto_alcantarillado/plan_maestro.php" class="dropdown-item">Plan Maestro de Abastecimiento</a>
                                     <a href="acueducto_alcantarillado/abastecimiento.php" class="dropdown-item">Sistema de Abastecimiento</a>
                                     
                                     
                                     <a href="acueducto_alcantarillado/obras.php" class="dropdown-item">Obras</a>
                                     <li><hr class="dropdown-divider"></li>
+                                    <a href="acueducto_alcantarillado/sistema_drenaje.php" class="dropdown-item">Sistema de Drenaje</a>
                                     <a href="acueducto_alcantarillado/PTAR.php" class="dropdown-item">PTAR Lagunas de Oxidación</a>
                                     <a href="acueducto_alcantarillado/mapas.php" class="dropdown-item">Mapas Acueducto | Alcantarillado</a>
                                 </div>
@@ -125,46 +133,46 @@
         <!-- Navbar End -->
 
 <!-- Carousel Start -->
-<div class="container-fluid px-0">
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Second slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Third slide"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Fourt slide"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/1.png" class="img-fluid" alt="First slide">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/2.png" class="img-fluid" alt="Second slide">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                     <!-- Yuli -->
-                    <div class="carousel-item">
-                        <img src="img/3.png" class="img-fluid" alt="Third slide">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/4.png" class="img-fluid" alt="Fourt slide">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <!-- Yuli -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<?php if(count($images)>0):?>
+<!-- aqui insertaremos el slider -->
+<div id="carousel1" class="carousel slide" data-ride="carousel">
+  <!-- Indicatodores -->
+  <ol class="carousel-indicators">
+<?php $cnt=0; foreach($images as $img):?>
+    <li data-target="#carousel1" data-slide-to="0" class="<?php if($cnt==0){ echo 'active'; }?>"></li>
+<?php $cnt++; endforeach; ?>
+  </ol>
+
+  <!-- Contenedor de las imagenes -->
+  <div class="carousel-inner" role="listbox">
+<?php $cnt=0; foreach($images as $img):?>
+    <div class="item <?php if($cnt==0){ echo 'active'; }?>">
+      <img src="<?php echo 'panel_administrativo/'.$img->folder.$img->src; ?>" alt="Imagenes carrousel">
+      <div class="carousel-caption"><?php echo $img->title; ?></div>
+    </div>
+<?php $cnt++; endforeach; ?>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+
+</div>
+<?php else:?>
+  <h4 class="alert alert-warning">No hay imagenes</h4>
+<?php endif; ?>
+</div>
+</div>
 </div>
 
 
@@ -233,6 +241,8 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>

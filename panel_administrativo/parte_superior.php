@@ -6,14 +6,18 @@ if (!isset($_SESSION['usuario_id'])) {
     exit();
 }
 
+$tipo_usuario= $_SESSION['nombre_usuario'];
+
+
 // Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard Inicio</title>
+  <link rel="icon" href="img/logo_acueducto.png">
+  <title>Panel Administrativo</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -52,6 +56,9 @@ if (!isset($_SESSION['usuario_id'])) {
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
     </ul>
+    <div class="Text-center">
+      <h5>Acueducto y Alcantarillado La Jagua Huila</h5>
+    </div>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -84,26 +91,20 @@ if (!isset($_SESSION['usuario_id'])) {
             <i class="fas fa-expand-arrows-alt"></i>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">
+          <b><?php echo $tipo_usuario;?></b></a>
+        </li>
+        
         <a class="nav-link" data-toggle="dropdown" href="#">
           <div class="user-panel">
             <div class="icon">
-              <img src="img/user2-160x160.jpg" class="img-circle" alt="icon">
+            <i class="fa-solid fa-user"></i>
             </div>
-            
           </div>
-    
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-              <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-            </div>
-            <div class="info">
-              <p>Norma Herrera</p>
-            </div>
-          </div>
           <div class="dropdown-divider"></div>
-          
           <a href="perfil-usuarios.php" class="dropdown-item">
             <i class="fa-solid fa-user"></i>  Tu Perfil
             <span class="float-right text-muted text-sm"></span>
@@ -132,10 +133,7 @@ if (!isset($_SESSION['usuario_id'])) {
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.php" class="brand-link">
-      <img src="img/logosena.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Panel Administrativo</span>
-    </a>
+   
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -145,8 +143,7 @@ if (!isset($_SESSION['usuario_id'])) {
           <img src="img/logo.jpeg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Acueducto y Alcantarillado</a>
-          <a href="#" class="d-block text-center">La Jagua Huila</a>
+          <a href="#" class="d-block"><h5>Panel Administrativo</5></a>
         </div>
       </div>
 

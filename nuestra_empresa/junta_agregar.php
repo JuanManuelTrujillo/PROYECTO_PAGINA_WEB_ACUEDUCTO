@@ -1,42 +1,4 @@
-<?php require_once "parte_superior.php"?>
-   <!-- Content Wrapper. Contains page content -->
-   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">JUNTA DIRECTIVA</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
- 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Noticias</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-<!-- INICIO DE CONTENIDO -->
-
-<div class="card container col-md-6">
-  <div class="col-sm-12">
-    <!-- select -->
-    <?php
+<?php
 
 	error_reporting( ~E_NOTICE ); // avoid notice
 	
@@ -124,12 +86,12 @@
 <body>
 <div class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
-
+    <div class="navbar-header"> <a class="navbar-brand" href="index.php" title='Inicio' target="_blank">Inicio</a> </div>
   </div>
 </div>
 <div class="container">
   <div class="page-header">
-    <h1 class="h3">Agregar nueva imágen. <a class="" href="../nuestra_empresa.php/junta_index.php"> <span class="glyphicon glyphicon-eye-open"> </a></h1>
+    <h1 class="h3">Agregar nueva imágen. <a class="btn btn-default" href="index.php"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; Mostrar todo </a></h1>
   </div>
   <?php
 	if(isset($errMSG)){
@@ -163,9 +125,6 @@
     </table>
   </form>
   <?php
-
-       
-          
 // Archivo de conexion con la base de datos
 require_once 'junta_conexion.php';
 // Condicional para validar el borrado de la imagen
@@ -183,40 +142,49 @@ if(isset($_GET['delete_id']))
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
-	header("Location: index.php");
+	header("Location: junta_index.php");
 }
 
 ?>
-
-
-<hr>
-</div>
-
-
-<center><h1>Junta Administradora</h1></center>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
+<title>acueducto</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+<script src="bootstrap/js/jquery.min.js"></script>
 </head>
+
 <body>
+	
 
   <div class="container">
-    <div class="row">
-      <div class="col-12" style="height: 300px; overflow-x: auto; border: 1px solid #ddd;">
-        <!-- Contenido de tu página aquí -->
-        <!-- Puedes agregar más contenido dentro de este div -->
-       
-        <!-- Fin del contenido -->
-     
-        
-<div class="">
-  <div class="container">
-
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   
   </div>
+</div>
+<div class="container">
+  <div class="page-header">
+   <center><h1 class="h2">Nuestra junta  Administradora.  </h1></center> 
+ 
+	
+	
+
+</div>
   <br />
-  <div class="">
+  <p>
+
+De conformidad con lo dispuesto en el artículo séptimo del Acuerdo No. 6 de 1995 del Concejo de Bogotá D.C. y en el artículo séptimo del Marco Estatutario de la Empresa (Acuerdo 5 de 2019), la dirección y administración de la Empresa está a cargo de la Junta Directiva y del Gerente General.
+
+La Junta Directiva está compuesta por nueve (9) miembros escogidos y designados por el Alcalde Mayor de Bogotá D.C. y tiene a su cargo atribuciones relacionadas con el establecimiento del norte estratégico de la Empresa, con la definición de políticas en materia de gobernabilidad, con la definición de asuntos de talento humano, de gestión financiera, de control y supervisión de la entidad.
+
+Actualmente la composición de la Junta Directiva se encuentra establecida en el Decreto Distrital 158 de abril 28 de 2021 expedido por la Alcaldesa Mayor de Bogotá D.C. y frente a su remuneración la norma vigente es el Decreto Distrital No. 082 de 2022.
+
+
+
+</p>
+  <div class="row">
     <?php
 	
 	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
@@ -228,82 +196,36 @@ if(isset($_GET['delete_id']))
 		{
 			extract($row);
 			?>
-    <div class=" col-sm-4">
-
-	
-  <div class="tarjeta">
-<div class="titulo">
-	</div>
-<div class="cuerpo">
-<img src="imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
-
-<p class="d-inline-flex gap-1">
-<center></p>
-
-
-            
-	<?php echo  $Imagen_Marca."&nbsp;/
-	  &nbsp;" .$Imagen_Tipo ; ?>
-        </p>
-        <p class="page-header"> <span> <a class="btn btn-info" href="junta_editar.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
-        </center>
+    <div class="col-xs-3">
     <hr>
-
-
-
- 
-
-
-</div>
-
-
-<div class="pie">
-<!-- Button trigger modal -->
-
-
-
-</div>
-</div>
-     <br>
-	 
+      <img src="imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded" width="100px" height="100px" />
+	  <p class="page-header"><?php echo $Imagen_Marca."&nbsp;/&nbsp;".$Imagen_Tipo; ?></p>
+      <p class="page-header"> <span> <a class="btn btn-info" href="EditarImagen.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
     </div>
-	
     <?php
 		}
 	}
 	else
 	{
 		?>
-    <div class="col-sm-12">
+    <div class="col-xs-12">
       <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
     </div>
     <?php
 	}
 	
 ?>
+ 
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
-
-
-
-
-                </div>
-             
-
-             </div>
-
-
-
-
+</div>
+</div>
 
  
 
 
 
-             </div>
-    </div>
-  </div>
-       <br>
-
-<!-- FIN DE CONTENIDO -->
-  </div>
-  <?php require_once "parte_inferior.php"?>
+<!-- Latest compiled and minified JavaScript --> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

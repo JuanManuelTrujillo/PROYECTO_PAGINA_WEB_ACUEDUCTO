@@ -121,7 +121,7 @@
                     </div>
                 </nav>
             </div>
-        </div>
+       
         <!-- Navbar End -->
 
 
@@ -131,89 +131,142 @@
 
         <!-- Inicio Conteido -->
           <!-- Page Header Start -->
-          <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Nuestra Junta Administradora</h1>
+          <?php
+// Archivo de conexion con la base de datos
+require_once 'junta_conexion.php';
+// Condicional para validar el borrado de la imagen
+if(isset($_GET['delete_id']))
+{
+	// Selecciona imagen a borrar
+	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
+	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
+	// Ruta de la imagen
+	unlink("imagenes/".$imgRow['Imagen_Img']);
+	
+	// Consulta para eliminar el registro de la base de datos
+	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
+	$stmt_delete->execute();
+	// Redireccioa al inicio
+	header("Location: index.php");
+}
 
-            </div>
-        </div>
-        <!-- Page Header End -->
+?>
 
 
+<hr>
+</div>
+
+
+<center><h1>Junta Administradora</h1></center>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="height: 300px; overflow-x: auto; border: 1px solid #ddd;">
+        <!-- Contenido de tu página aquí -->
+        <!-- Puedes agregar más contenido dentro de este div -->
        
+        <!-- Fin del contenido -->
+     
+        
+<div class="">
+  <div class="container">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  </div>
+  <br />
+  <div class="">
+    <?php
+	
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+	$stmt->execute();
+	
+	if($stmt->rowCount() > 0)
+	{
+		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+		{
+			extract($row);
+			?>
+    <div class=" col-sm-4">
+
+	
+  <div class="tarjeta">
+<div class="titulo">
+	</div>
+<div class="cuerpo">
+<img src="imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
+
+<p class="d-inline-flex gap-1">
+<center></p>
 
 
-          <!-- Team Start -->
-          <div class="container-fluid py-5 mb-5 team">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h3 class="text-primary">REPRESENTANTES LEGALES</h3>
+            
+	<?php echo  $Imagen_Marca."&nbsp;/
+	  &nbsp;" .$Imagen_Tipo ; ?>
+        </p></center>
+    <hr>
+
+
+
+ 
+
+
+</div>
+
+
+<div class="pie">
+<!-- Button trigger modal -->
+
+
+
+</div>
+</div>
+     <br>
+	 
+    </div>
+	
+    <?php
+		}
+	}
+	else
+	{
+		?>
+    <div class="col-sm-12">
+      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+    </div>
+    <?php
+	}
+	
+?>
+
+
+
+
+
                 </div>
-                <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="../img/andres.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="text-primary">JESUS ALEXANDER NARANJO  </h4>
-                                    <p class="m-0">PRESIDENTE </p>
-                                </div>
+             
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="../img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">HERNANDO ROJAS BECERRA </h4>
-                                    <p class="m-0">VICEPRESIDENTE</p>
-                                </div>
+             </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="../img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">BRIGITTE CASTILLO CASTRO </h4>
-                                    <p class="m-0">MIEMBRO JUNTA DIRECTIVA</p>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded team-item">
-                        <div class="team-content">
-                            <div class="team-img-icon">
-                                <div class="team-img rounded-circle">
-                                    <img src="../img/juan.png" class="img-fluid w-100 rounded-circle" alt="">
-                                </div>
-                                <div class="team-name text-center py-3">
-                                    <h4 class="">ARCADIO TRUJILLO SANCHEZ</h4>
-                                    <p class="m-0"> MIEMBRO JUNTA DIRECTIVA</p>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
 
-<!-- Fin Contenido -->
 
-      
+ 
+
+
+
+             </div>
+    </div>
+  </div>
+       <br>
       
       
 <!-- Footer Start -->

@@ -201,7 +201,7 @@ if(isset($_GET['delete_id']))
 <div class="titulo">
 	</div>
 <div class="cuerpo">
-<img src="imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
+<img src="../panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
 
 <p class="d-inline-flex gap-1">
 <center></p>

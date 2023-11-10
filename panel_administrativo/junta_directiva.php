@@ -100,7 +100,7 @@
 			if($stmt->execute())
 			{
 				$successMSG = "Nuevo registro insertado correctamente ...";
-				header("refresh:3;index.php"); // redirects image view page after 5 seconds.
+				header("refresh:3;../index.php"); // redirects image view page after 5 seconds.
 			}
 			else
 			{
@@ -128,9 +128,7 @@
   </div>
 </div>
 <div class="container">
-  <div class="page-header">
-    <h1 class="h3">Agregar nueva imágen. <a class="" href="../nuestra_empresa.php/junta_index.php"> <span class="glyphicon glyphicon-eye-open"> </a></h1>
-  </div>
+  
   <?php
 	if(isset($errMSG)){
 			?>
@@ -147,11 +145,11 @@
     <table class="table table-bordered table-responsive">
       <tr>
         <td><label class="control-label">Nombre Apellido</label></td>
-        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese nombre y Apellido" value="<?php echo $username; ?>" /></td>
+        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese nombre y Apellido"  ></td>
       </tr>
       <tr>
         <td><label class="control-label">Rool</label></td>
-        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese tipo de rool" value="<?php echo $userjob; ?>" /></td>
+        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese tipo de rool"  ></td>
       </tr>
       <tr>
         <td><label class="control-label">Imágen.</label></td>
@@ -183,7 +181,7 @@ if(isset($_GET['delete_id']))
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
-	header("Location: index.php");
+	header("Location: ../index.php");
 }
 
 ?>

@@ -119,7 +119,7 @@ if(isset($_POST['btn_save_updates']))
     <table class="table table-bordered table-responsive">
       <tr>
         <td><label class="control-label">Marca.</label></td>
-        <td><input class="form-control" type="text" name="user_name" value="<?php echo $Imagen_Marca; ?>" required /></td>
+        <td><input class="form-control" type="text" name="user_name" value="<?php echo $Imagen_Marca; ?>"  ></td>
       </tr>
       <tr>
         <td><label class="control-label">Tipo.</label></td>

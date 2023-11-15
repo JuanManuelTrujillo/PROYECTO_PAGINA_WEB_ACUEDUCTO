@@ -23,7 +23,7 @@ $sql = "INSERT INTO registro_usuarios (nombre, correo, usuario, contraseña, ace
 
 if ($conn->query($sql) === TRUE) {
 // Redireccionar a la página de inicio de sesión
-     header("Location: index_carrusel.php");
+     header("Location: registro_usuarios.php");
      exit();
 
 } else {

@@ -1,21 +1,34 @@
 <?php require_once "parte_superior.php"?>
 
+<script>
+    function confirmacion(){
+        var respuesta = confirm("¿confirma que desea borrar el registro?");
+    if(respuesta == true){
+        return true;
+    }else {
+    return false;
+    }
+    }
+
+    function confirmacion_editar(){
+        var respuesta = confirm("¿confirma que desea editar el registro?");
+    if(respuesta == true){
+        return true;
+    }else {
+    return false;
+    }
+    }
+
+</script>
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-center">Registro de Usuarios</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+      
     </div>
     <!-- /.content-header -->
-   <!-- /.login-logo -->
+   
 
    <!-- INICIO FORMULARIO CAMBIO DE CONTRASEÑA -->
    <br>
@@ -23,7 +36,7 @@
     <div class="card-body login-card-body">
 
       <div class="card-body register-card-body">
-      <h4 class="login-box-msg">Registra una nueva cuenta</h4>
+      <h4 class="login-box-msg">Registra Un Nuevo Usuario</h4>
 
       <form action="conexion_registro.php" method="POST">
         <div class="input-group mb-3">
@@ -93,57 +106,38 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Nombres</th>
-                  <th>Apellidos</th>
-                  <th>Edad</th>
-                  <th>Correo Electrónico</th>
-                  <th>Teléfono</th>
+                  <th>Id:</th>
+                  <th>Nombres:</th>
+                  <th>Correo:</th>
+                  <th>Usuario:</th>
+                  <th>Fecha Registro:</th>
                 </tr>
                 </thead>
                 <tbody>
-        
+                <?php
+                include 'conexion.php';
 
+                $sql = $conn->query("SELECT * FROM registro_usuarios");
 
-                <tr>
-                  <td>Yulieth</td>
-                  <td>Vanegas</td>
-                  <td>18</td>
-                  <td>yfacundo@gmail.com</td>
-                  <td>3167039524</td>
-                </tr>
-                <tr>
-                  <td>Juan</td>
-                  <td>Trujillo</td>
-                  <td>17</td>
-                  <td>trujillo27@gmail.com</td>
-                  <td>3153640383</td>
-                </tr>
+                while ($resultado = $sql->fetch_assoc()) {
+                ?>
 
-                <tr>
-                  <td>Paula</td>
-                  <td>Cano</td>
-                  <td>19</td>
-                  <td>pcano@gmail.com</td>
-                  <td>3232507436</td>
-                </tr>
- 
-                <tr>
-                  <td>Juana</td>
-                  <td>Walles</td>
-                  <td>20</td>
-                  <td>walles@gmail.com</td>
-                  <td>317593729</td>
-                </tr>
-                <tr>
-                  <td>Sofia</td>
-                  <td>Zambrano</td>
-                  <td>23</td>
-                  <td>aafia@gmail.com</td>
-                  <td>3214658923</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                </tfoot>
+                    <tr>
+                        <th scope="row"><?php echo $resultado['id']?></th>
+                        <th scope="row"><?php echo $resultado['nombre']?></th>
+                        <th scope="row"><?php echo $resultado['correo']?></th>
+                        <th scope="row"><?php echo $resultado['usuario']?></th>
+                        <th scope="row"><?php echo $resultado['fecha_registro']?></th>                       
+                        <th>
+                            <a href="editar_registro_usuarios.php?Id=<?php echo $resultado['id']?>" class="btn btn-warning" onclick="return confirmacion_editar()">Editar</a>
+                            <a href="Eliminar_registro_usuarios.php?id=<?php echo $resultado['id']?>" class="btn btn-danger" onclick="return confirmacion()">Eliminar</a>
+                        </th>
+                    </tr>
+
+                <?php
+                }
+                ?>
+            </tbody>
               </table>
             </div>
             <!-- /.card-body -->

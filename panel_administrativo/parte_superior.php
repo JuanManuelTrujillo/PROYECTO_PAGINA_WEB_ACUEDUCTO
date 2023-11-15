@@ -182,42 +182,33 @@ $tipo_usuario= $_SESSION['nombre_usuario'];
               </p>
             </a>
           </li>
-          <!--<li class="nav-item">-->
-          <!--    <a href="Junta_directiva.php" class="nav-link">-->
-          <!--    <i class="fa-solid fa-users"></i>-->
-          <!--    <p>-->
-          <!--      Junta Directiva-->
-          <!--      <span class="right badge badge-danger"></span>-->
-          <!--    </p>-->
-          <!--  </a>-->
-          <!--</li>-->
-          <!--<li class="nav-item">-->
-          <!--  <a href="canal_atencion.php" class="nav-link">-->
-          <!--  <i class="fa-solid fa-comments"></i>-->
-          <!--    <p>-->
-          <!--      Canales de Atención-->
-          <!--      <span class="right badge badge-danger"></span>-->
-          <!--    </p>-->
-          <!--  </a>-->
-          <!--</li>-->
-          <!--<li class="nav-item">-->
-          <!--    <a href="obras_acueducto.php" class="nav-link">-->
-          <!--    <i class="fa-solid fa-helmet-safety"></i>-->
-          <!--    <p>-->
-          <!--    Obras Acueducto-->
-          <!--      <span class="right badge badge-danger"></span>-->
-          <!--    </p>-->
-          <!--  </a>-->
-          <!--</li>-->
-          <!--<li class="nav-item">-->
-          <!--  <a href="obras_alcantarillado.php" class="nav-link">-->
-          <!--  <i class="fa-solid fa-screwdriver-wrench"></i>-->
-          <!--    <p>-->
-          <!--    Obras Alcantarillado-->
-          <!--      <span class="right badge badge-danger"></span>-->
-          <!--    </p>-->
-          <!--  </a>-->
-          <!--</li>-->
+          <li class="nav-item">
+             <a href="Junta_directiva.php" class="nav-link">
+             <i class="fa-solid fa-users"></i>
+             <p>
+               Junta Directiva
+               <span class="right badge badge-danger"></span>
+             </p>
+           </a>
+          </li>
+          <li class="nav-item">
+           <a href="canal_atencion.php" class="nav-link">
+           <i class="fa-solid fa-comments"></i>
+             <p>
+               Canales de Atención
+               <span class="right badge badge-danger"></span>
+             </p>
+           </a>
+          </li>
+          <li class="nav-item">
+             <a href="obras_acueducto.php" class="nav-link">
+             <i class="fa-solid fa-helmet-safety"></i>
+             <p>
+             Obras Acueducto
+               <span class="right badge badge-danger"></span>
+             </p>
+           </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

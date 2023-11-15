@@ -46,16 +46,6 @@ include "panel_administrativo/conexion_carrusel.php";
     </head>
 
     <body>
-    <style>
-        body {
-            background-image: url('img/fondo (2).jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-       
-    </style>
 
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">

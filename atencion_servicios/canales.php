@@ -171,6 +171,8 @@
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="blog-item position-relative bg-light rounded">
                             <img src="img/virtual.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <img src="panel_administrativo/img/virtua.jpg <?php echo $row['imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >      <!-- AYUDA-->
+
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Virtual</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                     <br>

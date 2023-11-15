@@ -5,7 +5,7 @@
 **/
 
 function con(){
-	return new mysqli("127.0.0.1","root","root","u684809565_acueducto");
+	return new mysqli("127.0.0.1:3306","u684809565_admin","Admin_123","u684809565_acueducto");
 }
 
 function insert_img($title, $folder, $image){

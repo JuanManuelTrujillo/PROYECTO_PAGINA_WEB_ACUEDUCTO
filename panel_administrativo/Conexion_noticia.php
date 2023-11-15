@@ -1,8 +1,8 @@
 <?php
 
-$Localhost = '127.0.0.1';
-$Usuario_BD = 'root';
-$Password_BD = 'root';
+$Localhost = '127.0.0.1:3306';
+$Usuario_BD = 'u684809565_admin';
+$Password_BD = 'Admin_123';
 $Nombre_BD = 'u684809565_acueducto';
 
 try{

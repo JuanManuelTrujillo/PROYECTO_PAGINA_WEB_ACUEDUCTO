@@ -1,40 +1,13 @@
 <?php require_once "parte_superior.php"?>
-   <!-- Content Wrapper. Contains page content -->
-   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">TARGETAS INFORMATIVAS</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
- 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Noticias</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+  <h1 class="mm-5 text-center">TARGETAS DE NOTICIAS</h1>
 <!-- INICIO DE CONTENIDO -->
 <?php
 
-	error_reporting( ~E_NOTICE ); // avoid notice
+	error_reporting(E_NOTICE ); // avoid notice
 	
 	require_once 'Conexion_noticia.php';
 	
@@ -49,13 +22,13 @@
 		
 		
 		if(empty($username)){
-			$errMSG = "Ingrese la marca";
+			$errMSG = "Ingrese el Tíulo";
 		}
 		else if(empty($userjob)){
-			$errMSG = "Ingrese el tipo.";
+			$errMSG = "Ingrese Descripción";
 		}
 		else if(empty($imgFile)){
-			$errMSG = "Seleccione el archivo de imagen.";
+			$errMSG = "Selecciona una imagen";
 		}
 		else
 		{
@@ -111,21 +84,12 @@
 <meta charset="utf-8">
 <title>Subir, Insertar, Actualizar, Borrar una imágen usando PHP y MySQL</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-
-<!-- Latest compiled and minified JavaScript -->
-
 </head>
 <body>
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header"> <a class="navbar-brand" href="index.php" title='Inicio' target="_blank">Inicio</a> </div>
-  </div>
-</div>
+
 <div class="container">
   <div class="page-header">
-    <h1 class="h3">Agregar nueva imágen. <a class="btn btn-default" href="index.php"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; Mostrar todo </a></h1>
+    <h1 class="h3">Agregar Noticias:</h1>
   </div>
   <?php
 	if(isset($errMSG)){
@@ -142,19 +106,19 @@
   <form method="post" enctype="multipart/form-data" class="form-horizontal">
     <table class="table table-bordered table-responsive">
       <tr>
-        <td><label class="control-label">Titulo</label></td>
-        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese nombre y Apellido" value="" /></td>
+        <td><label class="control-label">Titulo Noticia:</label></td>
+        <td><input class="form-control" type="text" name="user_name" placeholder="Ingrese Título" value="" /></td>
       </tr>
       <tr>
-        <td><label class="control-label">Descripcion</label></td>
-        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese tipo de rool" value="" /></td>
+        <td><label class="control-label">Descripcion Noticia:</label></td>
+        <td><input class="form-control" type="text" name="user_job" placeholder="Ingrese Descripción" value="" /></td>
       </tr>
       <tr>
-        <td><label class="control-label">Imágen.</label></td>
+        <td><label class="control-label">Selecciona una Imagen:</label></td>
         <td><input class="input-group" type="file" name="user_image" accept="image/*" /></td>
       </tr>
       <tr>
-        <td colspan="2"><button type="submit" name="btnsave" class="btn btn-default"> <span class="glyphicon glyphicon-save"></span> &nbsp; Guardar Imagen </button></td>
+        <td colspan="2"><button type="submit" name="btnsave" class="btn btn-success"> <span class="glyphicon glyphicon-save"></span> &nbsp; Subir Noticia</button></td>
       </tr>
     </table>
   </form>
@@ -180,23 +144,7 @@ if(isset($_GET['delete_id']))
 }
 
 ?>
->
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
-<title>acueducto</title>
-
-
-
-<link rel="stylesheet" href="">
-
-
-</head>
-
-<body>
-
- 
-</div>
 <div class="container">
   <div class="page-header">
   
@@ -280,13 +228,13 @@ if(isset($_GET['delete_id']))
 
 
 
-
-
+  </div>
+  <!-- FIN DE CONTENIDO -->
+  </section>
+  <!-- /.content -->
+</div>
 
 
 </body>
 </html>
-
-<!-- FIN DE CONTENIDO -->
-  </div>
   <?php require_once "parte_inferior.php"?>

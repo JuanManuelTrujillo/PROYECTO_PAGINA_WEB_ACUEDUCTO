@@ -6,17 +6,16 @@
   <section class="content-header">
   <h1 class="m-5 text-center">EDITAR INFORMACIÓN DE USUARIOS</h1>
   <form class="container" action="conexion_editar_usuarios.php" method="POST">
-        <?php
-         include 'Conexion.php';
+  <?php
+         include 'conexion.php';
 
-            $sql = "SELECT * FROM registro_usuarios WHERE id";
+            $sql = "SELECT * FROM registro_usuarios WHERE id=".$_GET['id'];
             $resultado = $conn->query($sql);
 
             $row = $resultado->fetch_assoc();
         ?>
 
-        <!--TRAER DATOS CATEGORIAS-->
-       
+        <input type="Hidden" class="form-control" name="id" value="<?php echo $row['id']; ?>">
 
         <div class="mb-3">
             <label class="form-label">Nombre:</label>
@@ -32,7 +31,7 @@
         </div>
 
         <div class="text-center">
-            <button type="submit" class="btn btn-danger">Agregar</button>
+            <button type="submit" class="btn btn-success">Actualizar Información</button>
             <a href="registro_usuarios.php" class="btn btn-dark">Regresar</a>
         </div>
     </form>

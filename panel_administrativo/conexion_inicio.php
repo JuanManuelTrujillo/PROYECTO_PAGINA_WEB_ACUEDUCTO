@@ -18,8 +18,8 @@ if ($result->num_rows == 1) {
     $_SESSION['nombre_usuario'] = $row['nombre'];
     header("Location:index_carrusel.php");
 } else {
-    // Las credenciales son incorrectas, muestra un mensaje de error
-    echo "Credenciales incorrectas. <a href='ingreso.php'>Intenta de nuevo</a>";
+    // Muestra un mensaje de error si las credenciales son incorrectas
+    echo "<script> alert('Usuario o Contraseña Son Incorrectas');window.location= 'ingreso.php' </script>";
 }
 }
 $conn->close();

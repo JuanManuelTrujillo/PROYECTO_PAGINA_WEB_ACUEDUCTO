@@ -122,7 +122,7 @@ include "panel_administrativo/conexion_carrusel.php";
 
                            
                         </div>
-                        <a href="panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
+                        <a href="panel_administrativo/ingreso.php" target="_blank" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
@@ -153,7 +153,6 @@ include "panel_administrativo/conexion_carrusel.php";
 <?php $cnt=0; foreach($images as $img):?>
     <div class="item <?php if($cnt==0){ echo 'active'; }?>">
       <img src="<?php echo 'panel_administrativo/'.$img->folder.$img->src; ?>" alt="Imagenes carrousel">
-      <div class="carousel-caption"><?php echo $img->title; ?></div>
     </div>
 <?php $cnt++; endforeach; ?>
   </div>

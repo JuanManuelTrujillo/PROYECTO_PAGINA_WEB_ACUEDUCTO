@@ -42,10 +42,7 @@
       </form>
 
       <p class="mt-3 mb-1">
-        <a href="index.php">Inicio de sesión</a>
-      </p>
-      <p class="mb-0">
-        <a href="registro.php" class="text-center">Registrar una nueva cuenta</a>
+        <a href="ingreso.php">Regresar</a>
       </p>
     </div>
     <!-- /.login-card-body -->

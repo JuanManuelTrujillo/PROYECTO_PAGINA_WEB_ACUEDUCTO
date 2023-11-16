@@ -2,7 +2,7 @@
 
 <script>
     function confirmacion(){
-        var respuesta = confirm("¿confirma que desea borrar el registro?");
+        var respuesta = confirm("¿Confirma que desea borrar el Registro?");
     if(respuesta == true){
         return true;
     }else {
@@ -11,7 +11,7 @@
     }
 
     function confirmacion_editar(){
-        var respuesta = confirm("¿confirma que desea editar el registro?");
+        var respuesta = confirm("¿Confirma que desea editar el Registro?");
     if(respuesta == true){
         return true;
     }else {
@@ -74,7 +74,7 @@
         <!-- /.col -->
         <div class="row">
         <div class="col-12">
-        <input  type="submit" class="btn btn-primary btn-block" value="Registrar Usuario">
+        <input  type="submit" class="btn btn-success btn-block" value="Registrar Usuario">
           
         </div>
       </div>
@@ -129,7 +129,7 @@
                         <th scope="row"><?php echo $resultado['usuario']?></th>
                         <th scope="row"><?php echo $resultado['fecha_registro']?></th>                       
                         <th>
-                            <a href="editar_registro_usuarios.php?Id=<?php echo $resultado['id']?>" class="btn btn-warning" onclick="return confirmacion_editar()">Editar</a>
+                            <a href="editar_registro_usuarios.php?id=<?php echo $resultado['id']?>" class="btn btn-warning" onclick="return confirmacion_editar()">Editar</a>
                             <a href="Eliminar_registro_usuarios.php?id=<?php echo $resultado['id']?>" class="btn btn-danger" onclick="return confirmacion()">Eliminar</a>
                         </th>
                     </tr>

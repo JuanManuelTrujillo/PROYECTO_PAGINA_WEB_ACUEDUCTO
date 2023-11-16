@@ -1,0 +1,2 @@
+<br />
+<b>Warning</b>:  readfile(uploads/col4.0.jpg): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\PROYECTO_PAGINA_WEB_ACUEDUCTO\panel_administrativo\descargar_carrusel.php</b> on line <b>10</b><br />

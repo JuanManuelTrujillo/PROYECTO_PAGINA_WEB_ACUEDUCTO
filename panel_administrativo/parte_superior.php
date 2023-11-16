@@ -105,18 +105,13 @@ $tipo_usuario= $_SESSION['nombre_usuario'];
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <div class="dropdown-divider"></div>
-          <a href="perfil-usuarios.php" class="dropdown-item">
-            <i class="fa-solid fa-user"></i>  Tu Perfil
-            <span class="float-right text-muted text-sm"></span>
-          </a>
-          <div class="dropdown-divider"></div>
           <a href="olvido-contraseña-panel.php" class="dropdown-item">
             <i class="fa-solid fa-lock"></i>  Cambiar Contraseña
             <span class="float-right text-muted text-sm"></span>
           </a>
           <div class="dropdown-divider"></div>
           <a href="registro_usuarios.php" class="dropdown-item">
-            <i class="fa-solid fa-circle-xmark"></i> Registrar Usuario
+            <i class="fa-solid fa-circle-xmark"></i> Registrar Usuarios
             <span class="float-right text-muted text-sm"></span>
           </a>
           <div class="dropdown-divider"></div>

@@ -43,6 +43,7 @@ include "panel_administrativo/conexion_carrusel.php";
 
         <!-- Template Stylesheet -->
         <link href="css/estilo.css" rel="stylesheet">
+        
     </head>
 
     <body>
@@ -200,7 +201,7 @@ if(isset($_GET['delete_id']))
 ?>
 
 
-<center><h1>Noticias</h1></center>
+<center><h1 class="text-primary">Noticias</h1></center>
 <hr>
 </div>
 <div class="container">
@@ -224,24 +225,24 @@ if(isset($_GET['delete_id']))
     <div class=" col-sm-3">
 
 	
-  <div class="tarjeta">
-<div class="titulo">
-	<center><h3 class="" >
-	<?php echo $Imagen_Marca."&nbsp;
-	  &nbsp;" ?></h3></center></div>
-<div class="cuerpo">
-<img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
+     <div class="tarjeta">
+      <div class="titulo ">
+	 <center><h3 class="text-white bg-primary rounded" >  <!-- Modifique -->
+	 <?php echo $Imagen_Marca."&nbsp;
+ 	  &nbsp;" ?></h3></center></div>
+     <div class="cuerpo">
+       <img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
 
-<p class="d-inline-flex gap-1">
-</p>
+        <p class="d-inline-flex gap-1">
+      </p>
 
-<details style="font-size:15px">
+       <details style="font-size:15px">
         <summary style="font-size:15px" >ver noticia</summary>
         <p >
             
-	<?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
+	     <?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
         </p>
-    </details>
+       </details>
 
 
 
@@ -277,24 +278,11 @@ if(isset($_GET['delete_id']))
 ?>
 
 
-
-
-
                 </div>
              
 
              </div>
 
-
-
-
-
- 
-
-
-
-
-       <hr>
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">

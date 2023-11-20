@@ -1,3 +1,7 @@
+<?php
+include "../panel_administrativo/conexion_canal.php";
+function get_imgs() {}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -138,7 +142,7 @@
         </div>
         <!-- Page Header End -->
 
-
+</div>
 
 
 
@@ -170,9 +174,10 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
                         <div class="blog-item position-relative bg-light rounded">
-                            <img src="img/virtual.jpg" class="img-fluid w-100 rounded-top" alt="">
-                            <img src="panel_administrativo/img/virtua.jpg <?php echo $row['imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >      <!-- AYUDA-->
 
+                               <!-- AYUDA-->
+
+                            <img src="img/virtual.jpg" class="img-fluid w-100 rounded-top" alt="">  
                             <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; left: 20px;">Virtual</span>
                             <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
                                     <br>
@@ -195,6 +200,108 @@
             </div>
         </div>
         <!-- Blog End -->
+
+
+
+<div class="container-fluid blog py-5 my-5">
+<div class="container py-5">
+<div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">En este apartado encuentras los canales de atencion que tenemos garantizando su satisfacción y calidad del servicio.</h5>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    
+
+ 
+
+  </div>
+  <br />
+  <div class="">
+    <?php
+	
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+	$stmt->execute();
+	
+	if($stmt->rowCount() > 0)
+	{
+		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+		{
+			extract($row);
+			?>
+    <div class=" col-sm-3">
+
+	
+     <div class="tarjeta row g-1 justify-content-center ">
+      <div class="titulo">
+        <br>
+	 <center><h3 class="text-white bg-primary rounded" >
+	 <?php echo $Imagen_Marca."&nbsp;
+ 	  &nbsp;" ?></h3></center></div>
+     <div class="blog-content text-center position-relative px-3" style="margin-top: ">
+       <img src="../panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded-top"  style="width:100%" height="170px"  >
+
+
+       <details style="font-size:15px ">
+        <summary 
+         class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom" style="margin-top: -1px;"><a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="text-white"><small><i class="bi bi-envelope-fill me-2 text-secondary"></i>Email</small></a> <a href="https://wa.me/+573227324944" target="_blank" class="text-white"><small><i class="bi bi-whatsapp me-2 text-secondary"> </i>WhatsApp</small></a></summary>
+        
+            <p >
+            
+	     <?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
+        </p>
+       </details>
+
+<!-- 2 -->
+       <details style="font-size:15px ">
+        <summary 
+         class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom" style="margin-top: -1px;"><a href="https://mail.google.com/mail/u/0/?ogbl#inbox" class="text-white"><small><i class="bi bi-envelope-fill me-2 text-secondary"></i>Email</small></a> <a href="https://wa.me/+573227324944" target="_blank" class="text-white"><small><i class="bi bi-whatsapp me-2 text-secondary"> </i>WhatsApp</small></a></summary>
+        
+            <p >
+            
+	     <?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
+        </p>
+       </details>
+
+ 
+
+
+</div>
+
+
+<!-- Button trigger modal -->
+
+
+
+</div>
+</div>
+     <br>
+	 
+    </div>
+	
+    <?php
+		}
+	}
+	else
+	{
+		?>
+    <div class="col-sm-12">
+      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+    </div>
+    <?php
+	}
+	
+?>
+
+
+
+
+
+                </div>
+             
+
+             </div>
+
+ 
+
 
 
 

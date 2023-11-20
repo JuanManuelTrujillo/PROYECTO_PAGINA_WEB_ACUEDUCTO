@@ -9,11 +9,6 @@
   <!-- /.content -->
 </div>
 
-<?php require_once "parte_inferior.php"?>
-
-
-
-
 
 
 <?php
@@ -158,3 +153,4 @@ if(isset($_POST['btn_save_updates']))
 </div>
 </body>
 </html>
+<?php require_once "parte_inferior.php"?>

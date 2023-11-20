@@ -166,7 +166,7 @@ if(isset($_GET['delete_id']))
 
 	
   <div class="tarjeta"  >
-<div class="titulo"><h3 class="page-header" >
+<div class="titulo "><h3 class="page-header" >
 	<?php echo $Imagen_Marca."&nbsp;
 	  &nbsp;" ?></h3></strong></div>
 <div class="cuerpo">

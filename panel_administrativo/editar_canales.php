@@ -5,15 +5,10 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
   <h1 class="m-5 text-center">CARRUSEL DE IMAGENES</h1>
-  </section>
-  <!-- /.content -->
-</div>
-
-
-
-<?php
+  <?php
 error_reporting( ~E_NOTICE );	
 require_once 'conexion_canal.php';
+
 
 if(isset($_GET['edit_id']) && !empty($_GET['edit_id']))
 {
@@ -129,6 +124,7 @@ if(isset($_POST['btn_save_updates']))
     <?php
 	}
 	?>
+	
     <table class="table table-bordered table-responsive">
       <tr>
         <td><label class="control-label">Titulo.</label></td>
@@ -153,4 +149,13 @@ if(isset($_POST['btn_save_updates']))
 </div>
 </body>
 </html>
+
+  </section>
+<!-- /.content -->
+</div>
+
+
+
 <?php require_once "parte_inferior.php"?>
+
+  

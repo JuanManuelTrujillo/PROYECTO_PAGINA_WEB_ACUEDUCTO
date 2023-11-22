@@ -145,14 +145,14 @@ if(isset($_GET['delete_id']))
 	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
 	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
 	// Ruta de la imagen
-	unlink("imagenes/".$imgRow['Imagen_Img']);
+	unlink("imagenes/".$imgRow['Imagen_Img']); 
 	
 	// Consulta para eliminar el registro de la base de datos
 	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
-	header("Location: index.php");
+	header("Location: index.php"); 
 }
 
 ?>

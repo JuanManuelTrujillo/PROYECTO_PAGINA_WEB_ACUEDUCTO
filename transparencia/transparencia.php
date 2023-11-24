@@ -172,14 +172,14 @@
                     
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        1.Normativa
+                        1. Normativa
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                        <li> <a class="dropdown-item" href="visor.html" target="_blank"><strong> Leyes</strong></a> </li>
-                        <li> <a class="dropdown-item" href="visor_contrato.html" target="_blank"><strong> Contrato de uniformidades</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor.html" target="_blank"><strong> Ley 142 de 1994</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor_contrato.html" target="_blank"><strong> Contrato de Uniformidades</strong></a> </li>
                       
                     </ul>
                     </div>
@@ -193,14 +193,14 @@
             
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    2.Estatuto
+                    2. Estatutos
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <ul>
                  
-                       <li> <a class="dropdown-item" href="visor_estatutos.html" target="_blank"><strong> Articulo</strong></a> </li>
+                       <li> <a class="dropdown-item" href="visor_estatutos.html" target="_blank"><strong>Libro Estatutos</strong></a> </li>
                     
              
                   
@@ -219,14 +219,14 @@
             
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-               3.Procesos de recaudo, Tarifa de liquidacion de impuestos o industrial
+               3. Estudio Tarifario
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <ul>
                  
-                        <li> <a class="dropdown-item" href="visor_tarifaz.html" target="_blank"><strong> Tarifas</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor_tarifaz.html" target="_blank"><strong>Tarifas 2023</strong></a> </li>
                         
                        
               

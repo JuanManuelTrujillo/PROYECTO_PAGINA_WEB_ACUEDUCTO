@@ -100,7 +100,7 @@ if(isset($_POST['btnsave']))
     if($stmt->execute())
     {
       $successMSG = "Nuevo registro insertado correctamente ...";
-      header("refresh:3;../index.php"); // redirects image view page after 5 seconds.
+      header("junta_directiva.php"); // redirects image view page after 5 seconds.
     }
     else
     {
@@ -181,7 +181,7 @@ $stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid'
 $stmt_delete->bindParam(':uid',$_GET['delete_id']);
 $stmt_delete->execute();
 // Redireccioa al inicio
-header("Location: ../index.php");
+header("Location: ../junta_directiva.php");
 }
 
 ?>
@@ -206,7 +206,7 @@ header("Location: ../index.php");
           border: 1px solid #ddd;
           border-radius: 8px;
           overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
           margin-bottom: 20px;
 
          

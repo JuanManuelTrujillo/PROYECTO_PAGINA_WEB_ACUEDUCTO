@@ -170,7 +170,7 @@ include "panel_administrativo/conexion_carrusel.php";
 
 </div>
 <?php else:?>
-  <h4 class="alert alert-warning">No hay imagenes</h4>
+  <h4 class="alert alert-warning">No hay imagenes </h4>
 <?php endif; ?>
 </div>
 </div>

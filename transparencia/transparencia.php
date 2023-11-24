@@ -178,9 +178,9 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                        <li> <a class="dropdown-item" href="visor.html"><strong> Leyes</strong></a> </li>
-                        <li> <a class="dropdown-item" href="contrato.pdf"><strong> contrato de uniformidades</strong></a> </li>
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Normativa aplicable</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor.html" target="_blank"><strong> Leyes</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor_contrato.html" target="_blank"><strong> Contrato de uniformidades</strong></a> </li>
+                      
                     </ul>
                     </div>
                   </div>
@@ -200,9 +200,8 @@
                 <div class="accordion-body">
                     <ul>
                  
-                       <li> <a class="dropdown-item" href="pdf.html"><strong> Articulo</strong></a> </li>
-                       <li> <a class="dropdown-item" href="pdf.html"><strong> Articulo</strong></a> </li>
-                       <li> <a class="dropdown-item" href="pdf.html"><strong> Articulo</strong></a> </li>
+                       <li> <a class="dropdown-item" href="visor_estatutos.html" target="_blank"><strong> Articulo</strong></a> </li>
+                    
              
                   
     
@@ -227,9 +226,9 @@
                 <div class="accordion-body">
                     <ul>
                  
-                        <li> <a class="dropdown-item" href="tarifas.pdf"><strong> Tarifas</strong></a> </li>
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Decreto unico reglamento</strong></a> </li>
-                        <li> <a class="dropdown-item" href="pdf.html"><strong> Normativa aplicable</strong></a> </li>
+                        <li> <a class="dropdown-item" href="visor_tarifaz.html" target="_blank"><strong> Tarifas</strong></a> </li>
+                        
+                       
               
                    
      

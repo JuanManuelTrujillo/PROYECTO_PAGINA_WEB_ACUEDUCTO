@@ -169,12 +169,54 @@ if(isset($_GET['delete_id']))
 
   <div class="container">
     <div class="row">
-      <div class="col-12" style="height: 300px; overflow-x: auto; border: 1px solid #ddd;">
+      <div class="col-12" style="height: 300px; overflow-x: auto; border: px solid #ddd;">
         <!-- Contenido de tu página aquí -->
         <!-- Puedes agregar más contenido dentro de este div -->
        
         <!-- Fin del contenido -->
-     
+        <style>
+        .tarjeta {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+
+           
+        }
+
+        .tarjeta .cuerpo {
+            padding: 15px;
+        }
+
+        .tarjeta img {
+           
+
+            border-radius: 100%; /* Hace que la imagen sea redonda */
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+       
+        }
+
+        .tarjeta .titulo {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .tarjeta .pie {
+            text-align: right;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+        .tarjeta {
+            max-width: 80%;
+        }
+    }
+    </style>
+        
         
 <div class="">
   <div class="container">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-11-2023 a las 22:38:01
+-- Tiempo de generación: 28-11-2023 a las 22:45:27
 -- Versión del servidor: 8.0.33
 -- Versión de PHP: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `cargar-imagen`
+-- Base de datos: `u684809565_acueducto`
 --
 
 -- --------------------------------------------------------
@@ -38,13 +38,9 @@ CREATE TABLE `tbl_imagenes` (
 -- Volcado de datos para la tabla `tbl_imagenes`
 --
 
-INSERT INTO `junta` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) VALUES
-(34, 'savid', 'administrador', '16653.jpg'),
-(35, 'savid', 'administrador', '167700.jpg'),
-(29, 'cristian ', 'administrador', '341144.jpg'),
-(38, 'yuliet', 'administrador', '849572.jpg'),
-(36, 'savid', 'administrador', '143994.jpg'),
-(37, 'savid', 'administrador', '590804.jpg');
+INSERT INTO `tbl_imagenes` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) VALUES
+(16, 'Virtual', 'acueductoalcant_lajagua@hotmail.com', '70136.jpg'),
+(29, 'Presencial', 'Calle 4 número 2- Barrio San José La Jagua Huila', '113113.jpeg');
 
 --
 -- Índices para tablas volcadas
@@ -53,7 +49,7 @@ INSERT INTO `junta` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) V
 --
 -- Indices de la tabla `tbl_imagenes`
 --
-ALTER TABLE `junta`
+ALTER TABLE `tbl_imagenes`
   ADD PRIMARY KEY (`imagen_ID`);
 
 --
@@ -63,8 +59,8 @@ ALTER TABLE `junta`
 --
 -- AUTO_INCREMENT de la tabla `tbl_imagenes`
 --
-ALTER TABLE `junta`
-  MODIFY `imagen_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+ALTER TABLE `tbl_imagenes`
+  MODIFY `imagen_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

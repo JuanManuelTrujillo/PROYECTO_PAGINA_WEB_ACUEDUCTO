@@ -5,14 +5,14 @@ require_once 'junta_conexion.php';
 if(isset($_GET['edit_id']) && !empty($_GET['edit_id']))
 {
 	$id = $_GET['edit_id'];
-	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta WHERE Imagen_ID =:uid');
 	$stmt_edit->execute(array(':uid'=>$id));
 	$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
 	extract($edit_row);
 }
 else
 {
-	header("Location: junta_index.php");
+	header("Location: junta_directiva.php");
 }	
 
 if(isset($_POST['btn_save_updates']))
@@ -57,7 +57,7 @@ if(isset($_POST['btn_save_updates']))
 	// if no error occured, continue ....
 	if(!isset($errMSG))
 	{
-		$stmt = $DB_con->prepare('UPDATE tbl_imagenes 
+		$stmt = $DB_con->prepare('UPDATE junta 
 									 SET Imagen_Marca=:uname, 
 										 Imagen_Tipo=:ujob, 
 										 Imagen_Img=:upic 
@@ -105,7 +105,7 @@ if(isset($_POST['btn_save_updates']))
 </div>
 <div class="container">
   <div class="page-header">
-    <h1 class="h2">Actualización producto. <a class="btn btn-default" href="index.php"> Mostrar todos los modelos </a></h1>
+    <h1 class="h2">Actualización producto. <a class="btn btn-default" href="junta_directiva.php"> Mostrar todos los modelos </a></h1>
   </div>
   <div class="clearfix"></div>
   <form method="post" enctype="multipart/form-data" class="form-horizontal">
@@ -132,7 +132,7 @@ if(isset($_POST['btn_save_updates']))
       </tr>
       <tr>
         <td colspan="2"><button type="submit" name="btn_save_updates" class="btn btn-default"> <span class="glyphicon glyphicon-save"></span> Actualizar </button>
-          <a class="btn btn-default" href="junta_index.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
+          <a class="btn btn-default" href="junta_directiva.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
       </tr>
 	  
     </table>

@@ -54,7 +54,7 @@
 		// if no error occured, continue ....
 		if(!isset($errMSG))
 		{
-			$stmt = $DB_con->prepare('INSERT INTO tbl_imagenes(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
+			$stmt = $DB_con->prepare('INSERT INTO junta(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
 			$stmt->bindParam(':uname',$username);
 			$stmt->bindParam(':ujob',$userjob);
 			$stmt->bindParam(':upic',$userpic);
@@ -131,14 +131,14 @@ require_once 'junta_conexion.php';
 if(isset($_GET['delete_id']))
 {
 	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM junta WHERE Imagen_ID =:uid');
 	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
 	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
 	// Ruta de la imagen
 	unlink("imagenes/".$imgRow['Imagen_Img']);
 	
 	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_delete = $DB_con->prepare('DELETE FROM junta WHERE Imagen_ID =:uid');
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
@@ -187,7 +187,7 @@ Actualmente la composición de la Junta Directiva se encuentra establecida en el
   <div class="row">
     <?php
 	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta ORDER BY Imagen_ID DESC');
 	$stmt->execute();
 	
 	if($stmt->rowCount() > 0)

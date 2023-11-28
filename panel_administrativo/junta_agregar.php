@@ -54,7 +54,7 @@
 		// if no error occured, continue ....
 		if(!isset($errMSG))
 		{
-			$stmt = $DB_con->prepare('INSERT INTO tbl_imagenes(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
+			$stmt = $DB_con->prepare('INSERT INTO junta(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
 			$stmt->bindParam(':uname',$username);
 			$stmt->bindParam(':ujob',$userjob);
 			$stmt->bindParam(':upic',$userpic);
@@ -62,7 +62,7 @@
 			if($stmt->execute())
 			{
 				$successMSG = "Nuevo registro insertado correctamente ...";
-				header("refresh:3;index.php"); // redirects image view page after 5 seconds.
+				header("location: junta_directiva.php"); // redirects image view page after 5 seconds.
 			}
 			else
 			{
@@ -86,12 +86,12 @@
 <body>
 <div class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
-    <div class="navbar-header"> <a class="navbar-brand" href="index.php" title='Inicio' target="_blank">Inicio</a> </div>
+    <div class="navbar-header"> <a class="navbar-brand" href="junta_directiva.php" title='Inicio' target="_blank">Inicio</a> </div>
   </div>
 </div>
 <div class="container">
   <div class="page-header">
-    <h1 class="h3">Agregar nueva imágen. <a class="btn btn-default" href="index.php"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; Mostrar todo </a></h1>
+    <h1 class="h3">Agregar nueva imágen. <a class="btn btn-default" href="junta_agregar.php"> <span class="glyphicon glyphicon-eye-open"></span> &nbsp; Mostrar todo </a></h1>
   </div>
   <?php
 	if(isset($errMSG)){
@@ -131,18 +131,18 @@ require_once 'junta_conexion.php';
 if(isset($_GET['delete_id']))
 {
 	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM junta WHERE Imagen_ID =:uid');
 	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
 	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
 	// Ruta de la imagen
 	unlink("imagenes/".$imgRow['Imagen_Img']);
 	
 	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_delete = $DB_con->prepare('DELETE FROM junta WHERE Imagen_ID =:uid');
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
 	// Redireccioa al inicio
-	header("Location: junta_index.php");
+	header("Location:junta_directiva.php");
 }
 
 ?>
@@ -179,7 +179,7 @@ if(isset($_GET['delete_id']))
   <div class="row">
     <?php
 	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta ORDER BY Imagen_ID DESC');
 	$stmt->execute();
 	
 	if($stmt->rowCount() > 0)

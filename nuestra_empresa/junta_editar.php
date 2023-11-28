@@ -5,7 +5,7 @@ require_once 'junta_conexion.php';
 if(isset($_GET['edit_id']) && !empty($_GET['edit_id']))
 {
 	$id = $_GET['edit_id'];
-	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta WHERE Imagen_ID =:uid');
 	$stmt_edit->execute(array(':uid'=>$id));
 	$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
 	extract($edit_row);
@@ -57,7 +57,7 @@ if(isset($_POST['btn_save_updates']))
 	// if no error occured, continue ....
 	if(!isset($errMSG))
 	{
-		$stmt = $DB_con->prepare('UPDATE tbl_imagenes 
+		$stmt = $DB_con->prepare('UPDATE junta 
 									 SET Imagen_Marca=:uname, 
 										 Imagen_Tipo=:ujob, 
 										 Imagen_Img=:upic 

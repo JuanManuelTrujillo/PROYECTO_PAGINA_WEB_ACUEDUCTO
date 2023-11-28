@@ -38,7 +38,7 @@ CREATE TABLE `tbl_imagenes` (
 -- Volcado de datos para la tabla `tbl_imagenes`
 --
 
-INSERT INTO `tbl_imagenes` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) VALUES
+INSERT INTO `junta` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) VALUES
 (34, 'savid', 'administrador', '16653.jpg'),
 (35, 'savid', 'administrador', '167700.jpg'),
 (29, 'cristian ', 'administrador', '341144.jpg'),
@@ -53,7 +53,7 @@ INSERT INTO `tbl_imagenes` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_
 --
 -- Indices de la tabla `tbl_imagenes`
 --
-ALTER TABLE `tbl_imagenes`
+ALTER TABLE `junta`
   ADD PRIMARY KEY (`imagen_ID`);
 
 --
@@ -63,7 +63,7 @@ ALTER TABLE `tbl_imagenes`
 --
 -- AUTO_INCREMENT de la tabla `tbl_imagenes`
 --
-ALTER TABLE `tbl_imagenes`
+ALTER TABLE `junta`
   MODIFY `imagen_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 COMMIT;
 

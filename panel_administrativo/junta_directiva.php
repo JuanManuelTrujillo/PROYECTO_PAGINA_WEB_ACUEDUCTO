@@ -92,7 +92,7 @@ if(isset($_POST['btnsave']))
   // if no error occured, continue ....
   if(!isset($errMSG))
   {
-    $stmt = $DB_con->prepare('INSERT INTO tbl_imagenes(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
+    $stmt = $DB_con->prepare('INSERT INTO junta(Imagen_Marca,Imagen_Tipo,Imagen_Img) VALUES(:uname, :ujob, :upic)');
     $stmt->bindParam(':uname',$username);
     $stmt->bindParam(':ujob',$userjob);
     $stmt->bindParam(':upic',$userpic);
@@ -100,7 +100,9 @@ if(isset($_POST['btnsave']))
     if($stmt->execute())
     {
       $successMSG = "Nuevo registro insertado correctamente ...";
-      header("junta_directiva.php"); // redirects image view page after 5 seconds.
+      header("refresh:3;junta_directiva.php");
+      exit;
+       // redirects image view page after 5 seconds.
     }
     else
     {
@@ -156,7 +158,17 @@ else if(isset($successMSG)){
       <td><input class="input-group" type="file" name="user_image" accept="image/*" /></td>
     </tr>
     <tr>
-      <td colspan="2"><button type="submit" name="btnsave" class="btn btn-default"> <span class="glyphicon glyphicon-save"></span> &nbsp; Guardar Imagen </button></td>
+    <form action="procesar_formulario.php" method="post">
+    <!-- Tu contenido de formulario aquí -->
+
+    <td colspan="2">
+        <button type="submit" name="btnsave" class="btn btn-success" formaction="junta_agregar.php">
+            <span class="glyphicon glyphicon-save"></span> Guardar
+        </button>
+    </td>
+</form>
+
+   
     </tr>
   </table>
 </form>
@@ -170,18 +182,18 @@ require_once 'junta_conexion.php';
 if(isset($_GET['delete_id']))
 {
 // Selecciona imagen a borrar
-$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM junta WHERE Imagen_ID =:uid');
 $stmt_select->execute(array(':uid'=>$_GET['delete_id']));
 $imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
 // Ruta de la imagen
 unlink("imagenes/".$imgRow['Imagen_Img']);
 
 // Consulta para eliminar el registro de la base de datos
-$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
+$stmt_delete = $DB_con->prepare('DELETE FROM junta WHERE Imagen_ID =:uid');
 $stmt_delete->bindParam(':uid',$_GET['delete_id']);
 $stmt_delete->execute();
 // Redireccioa al inicio
-header("Location: ../junta_directiva.php");
+return("Location: junta_directiva.php");
 }
 
 ?>
@@ -253,7 +265,7 @@ header("Location: ../junta_directiva.php");
 <div class="">
   <?php
 
-$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes ORDER BY Imagen_ID DESC');
+$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta ORDER BY Imagen_ID DESC');
 $stmt->execute();
 
 if($stmt->rowCount() > 0)
@@ -279,7 +291,7 @@ if($stmt->rowCount() > 0)
 <?php echo  $Imagen_Marca."&nbsp;/
   &nbsp;" .$Imagen_Tipo ; ?>
       </p>
-      <p class="page-header"> <span> <a class="btn btn-info" href="junta_editar.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
+      <p class="page-header"> <span> <a class="btn btn-info" href="junta_editar.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="junta_agregar.php?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
       </center>
   <hr>
 

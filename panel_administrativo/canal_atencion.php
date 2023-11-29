@@ -67,10 +67,7 @@
 			$stmt->bindParam(':upic',$userpic);
 			
 			if($stmt->execute())
-			{
-				$successMSG = "Nuevo registro insertado correctamente ...";
-				header("refresh:3;index.php"); // redirects image view page after 5 seconds.
-			}
+			{}
 			else
 			{
 				$errMSG = "Error al insertar ...";
@@ -151,8 +148,7 @@ if(isset($_GET['delete_id']))
 	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
 	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
 	$stmt_delete->execute();
-	// Redireccioa al inicio
-	header("Location: index.php"); 
+	
 }
 
 ?>

@@ -79,7 +79,7 @@ if(isset($_POST['btn_save_updates']))
 			?>
 <script>
 			alert('Archivo editado correctamente ...');
-			window.location.href='index.php';
+			window.location.href='canal_atencion.php';
 			</script>
 <?php
 		}

@@ -5,7 +5,7 @@ require_once 'Conexion_noticia.php';
 if(isset($_GET['edit_id']) && !empty($_GET['edit_id']))
 {
 	$id = $_GET['edit_id'];
-	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
+	$stmt_edit = $DB_con->prepare('SELECT Imagen_Marca, Imagen_Tipo, Imagen_Img FROM noticias WHERE Imagen_ID =:uid');
 	$stmt_edit->execute(array(':uid'=>$id));
 	$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
 	extract($edit_row);
@@ -57,7 +57,7 @@ if(isset($_POST['btn_save_updates']))
 	// if no error occured, continue ....
 	if(!isset($errMSG))
 	{
-		$stmt = $DB_con->prepare('UPDATE tbl_imagenes 
+		$stmt = $DB_con->prepare('UPDATE noticias
 									 SET Imagen_Marca=:uname, 
 										 Imagen_Tipo=:ujob, 
 										 Imagen_Img=:upic 
@@ -132,11 +132,11 @@ if(isset($_POST['btn_save_updates']))
       </tr>
       <tr>
         <td colspan="2"><button type="submit" name="btn_save_updates" class="btn btn-default"> <span class="glyphicon glyphicon-save"></span> Actualizar </button>
-          <a class="btn btn-default" href="index.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
+          <a class="btn btn-default" href="noticias.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
       </tr>
     </table>
   </form>
-  <div class="alert alert-success"> <strong>Tutorial Vinculo!</strong> <a href="https://baulcode.com">Ir al Tutorial</a>! </div>
+  
 </div>
 </body>
 </html>

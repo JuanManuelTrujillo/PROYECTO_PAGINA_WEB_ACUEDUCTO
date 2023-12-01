@@ -16,25 +16,14 @@
     <!-- /.content-header -->
  
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Noticias</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-12">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
+
+   
     <!-- /.content-header -->
 
 <!-- INICIO DE CONTENIDO -->
 
-<div class="">
-  <div class="">
+<div class="container">
+  <div class="container">
     <!-- select -->
     <?php
 
@@ -256,7 +245,7 @@ return("Location: junta_directiva.php");
   }
   </style>
       
-<div class="">
+<div class="container">
 <div class="container">
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -292,8 +281,7 @@ if($stmt->rowCount() > 0)
   &nbsp;" .$Imagen_Tipo ; ?>
       </p>
       <p class="page-header"> <span> <a class="btn btn-info" href="junta_editar.php?edit_id=<?php echo $row['Imagen_ID']; ?>" title="click for edit" onclick="return confirm('Esta seguro de editar el archivo ?')"><span class="glyphicon glyphicon-edit"></span> Editar</a> <a class="btn btn-danger" href="junta_agregar.php?delete_id=<?php echo $row['Imagen_ID']; ?>" title="click for delete" onclick="return confirm('Esta seguro de eliminar el archivo?')"><span class="glyphicon glyphicon-remove-circle"></span> Borrar</a> </span> </p>
-      </center>
-  <hr>
+  
 
 
 

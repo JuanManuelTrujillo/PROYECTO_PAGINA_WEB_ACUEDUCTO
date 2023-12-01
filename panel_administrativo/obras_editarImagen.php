@@ -129,7 +129,7 @@ if(isset($_POST['btn_save_updates']))
       </tr>
       <tr>
         <td colspan="2"><button type="submit" name="btn_save_updates" class="btn btn-default"> <span class="glyphicon glyphicon-save"></span> Actualizar </button>
-          <a class="btn btn-default" href="obras.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
+          <a class="btn btn-default" href="obras_acueducto.php"> <span class="glyphicon glyphicon-backward"></span> cancelar </a></td>
       </tr>
     </table>
   </form>

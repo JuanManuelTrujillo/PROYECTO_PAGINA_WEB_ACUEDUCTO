@@ -144,7 +144,75 @@ if(isset($_GET['delete_id']))
 }
 
 ?>
+<style>
+/* Estilos para la tarjeta de noticias */
+.tarjeta {
+  border: 1px solid #ddd; /* Borde delimitador de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
+.tarjeta:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+/* Estilos para el título de la tarjeta */
+.tituloo {
+  background-color:#1361c4; /* Color de fondo del título */
+  color: #fff; /* Color del texto del título */
+  padding: 10px; /* Espaciado interno del título */
+  border-bottom: 1px solid #ddd; /* Borde inferior del título */
+}
+.tituloo h3 {
+    white-space: nowrap; /* Evita que las palabras se rompan en varias líneas por defecto */
+    overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final del texto si se corta */
+    transition: all 0.3s ease; /* Agrega una transición suave */
+
+    /* Personaliza otros estilos según tus necesidades */
+    color: #fff; /* Color del texto */
+    background-color:#1361c4; /* Color de fondo */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Estilos cuando el mouse está sobre el título */
+.tituloo h3:hover {
+    white-space: normal; /* Permite que el texto se envuelva y se muestre completo */
+    overflow: visible; /* Muestra todo el contenido */
+}
+
+
+
+/* Estilos para el cuerpo de la tarjeta */
+.cuerpo {
+  padding: 15px; /* Espaciado interno del cuerpo */
+  text-align: center; /* Centra el texto dentro del cuerpo */
+}
+
+/* Estilos para la imagen de la tarjeta */
+.tarjeta img {
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para el resumen dentro del detalle */
+tarjeta details p {
+  margin: 10px 0; /* Margen del resumen dentro del detalle */
+}
+
+/* Animación de transición para el resumen dentro del detalle */
+tarjeta details summary {
+  transition: color 0.3s ease-in-out; /* Animación suave de color */
+}
+
+tarjeta details summary:hover {
+  color: #007bff; /* Cambia el color al pasar el ratón sobre el resumen */
+}
+
+
+</style>
 <div class="container">
   <div class="page-header">
   
@@ -153,7 +221,7 @@ if(isset($_GET['delete_id']))
   <div class="">
     <?php
 	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM noticias ORDER BY Imagen_ID DESC');
+	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img, fecha_modificacion FROM noticias ORDER BY Imagen_ID DESC');
 	$stmt->execute();
 	
 	if($stmt->rowCount() > 0)
@@ -166,14 +234,14 @@ if(isset($_GET['delete_id']))
 
 	
   <div class="tarjeta"  >
-<div class="titulo "><h3 class="page-header" >
+<div class="tituloo "><h3 class="" >
 	<?php echo $Imagen_Marca."&nbsp;
 	  &nbsp;" ?></h3></strong></div>
 <div class="cuerpo">
 <img src="imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
 
 <p class="d-inline-flex gap-1">
-
+<p> <i style="  font-size: 10px;" >Última modificación: <?php echo $row['fecha_modificacion']; ?></i></p>
 
 <!-- Modal --> 
 

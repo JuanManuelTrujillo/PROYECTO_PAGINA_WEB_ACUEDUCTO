@@ -1,5 +1,7 @@
 <?php
 include "panel_administrativo/conexion_carrusel.php";
+include 'panel_administrativo/Conexion_noticia.php';
+
  $images = get_imgs();
 ?>
 <!DOCTYPE html>
@@ -20,7 +22,6 @@ include "panel_administrativo/conexion_carrusel.php";
         <meta property="og:description" nosune-meta-tags="main.seo.description" content="Junta Administradora de Acueducto y Alcantarillado Centro Poblado La Jagua Huila">
         <meta property="og:image:width" content="800">
         <meta property="og:image:height" content="418">
-        <meta property="og:image" nosune-meta-tags="main.seo.image" content="http://www.empugaresp.gov.co/sites/empresas-publicas-de-garzon/content/files/000001/1_entidad_1200x800.png">
 
 
         <!-- Google Web Fonts -->
@@ -36,7 +37,6 @@ include "panel_administrativo/conexion_carrusel.php";
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -134,258 +134,106 @@ include "panel_administrativo/conexion_carrusel.php";
         </div>
         <!-- Navbar End -->
 
-<!-- Carousel Start -->
+        <div class="container-fluid-12">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+            $conexion = new mysqli("127.0.0.1", "root", "root", "imagenes_carousel");
+            $resultado = $conexion->query("SELECT * FROM imagenes");
 
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12">
-<?php if(count($images)>0):?>
-<!-- aqui insertaremos el slider -->
-<div id="carousel1" class="carousel slide" data-ride="carousel">
-  <!-- Indicatodores -->
-  <ol class="carousel-indicators">
-<?php $cnt=0; foreach($images as $img):?>
-    <li data-target="#carousel1" data-slide-to="0" class="<?php if($cnt==0){ echo 'active'; }?>"></li>
-<?php $cnt++; endforeach; ?>
-  </ol>
+            $first = true; // Para marcar la primera imagen como activa
 
-  <!-- Contenedor de las imagenes -->
-  <div class="carousel-inner" role="listbox">
-<?php $cnt=0; foreach($images as $img):?>
-    <div class="item <?php if($cnt==0){ echo 'active'; }?>">
-      <img src="<?php echo 'panel_administrativo/'.$img->folder.$img->src; ?>" alt="Imagenes carrousel">
+            while ($row = $resultado->fetch_assoc()) {
+                $activeClass = $first ? 'active' : ''; // Añadir la clase 'active' a la primera imagen
+                echo '<div class="carousel-item ' . $activeClass . '">
+                        <img src="data:' . $row["tipo_archivo"] . ';base64,' . base64_encode($row["datos_archivo"]) . '" class="d-block w-100" alt="' . $row["nombre_archivo"] . '">
+                      </div>';
+                $first = false; // Después de la primera iteración, establecerlo como falso
+            }
+
+            if ($resultado->num_rows > 0) {
+                // Entrar al bucle while y mostrar las imágenes
+            } else {
+                echo "No se encontraron imágenes en la base de datos.";
+            }
+            $conexion->close();
+            ?>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
-<?php $cnt++; endforeach; ?>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Siguiente</span>
-  </a>
-
 </div>
-<?php else:?>
-  <h4 class="alert alert-warning">No hay imagenes </h4>
-<?php endif; ?>
-</div>
-</div>
-</div>
-
-
-                <?php
-// Archivo de conexion con la base de datos
-require_once 'panel_administrativo/Conexion_noticia.php';
-// Condicional para validar el borrado de la imagen
-if(isset($_GET['delete_id']))
-{
-	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM noticias WHERE Imagen_ID =:uid');
-	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
-	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
-	// Ruta de la imagen
-	unlink("imagenes/".$imgRow['Imagen_Img']);
-	
-	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM noticias WHERE Imagen_ID =:uid');
-	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
-	$stmt_delete->execute();
-	// Redireccioa al inicio
-	header("Location: index.php");
-}
-
-?>
-
-<style>
-/* Estilos para la tarjeta de noticias */
-.tarjeta {
-  border: 1px solid #ddd; /* Borde delimitador de la tarjeta */
-  border-radius: 10px; /* Bordes redondeados */
-  overflow: hidden; /* Oculta el contenido que se desborda */
-  margin-bottom: 20px; /* Espacio entre tarjetas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-.tarjeta:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
-  transition: transform 0.3s ease-in-out; /* Animación suave */
-}
-
-/* Estilos para el título de la tarjeta */
-.tituloo {
-  background-color:#1361c4; /* Color de fondo del título */
-  color:#333; /* Color del texto del título */
-  padding: 10px; /* Espaciado interno del título */
-  border-bottom: 1px solid #ddd; /* Borde inferior del título */
-}
-
-
-/* Estilos para el título de la tarjeta con efecto de marquesina */
-/* Estilos para el título de la tarjeta */
-.tituloo h3 {
-    white-space: nowrap; /* Evita que las palabras se rompan en varias líneas por defecto */
-    overflow: hidden; /* Oculta el contenido que desborda el contenedor */
-    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final del texto si se corta */
-    transition: all 0.3s ease; /* Agrega una transición suave */
-
-    /* Personaliza otros estilos según tus necesidades */
-    color: #FFFFFF; /* Color del texto */
-    background-color:#1361c4; /* Color de fondo */
-    padding: 5px; /* Espaciado interno */
-}
-
-/* Estilos cuando el mouse está sobre el título */
-.tituloo h3:hover {
-    white-space: normal; /* Permite que el texto se envuelva y se muestre completo */
-    overflow: visible; /* Muestra todo el contenido */
-}
-
-
-
-
-/* Estilos para el cuerpo de la tarjeta */
-.cuerpo {
-  padding: 15px; /* Espaciado interno del cuerpo */
-  text-align: center; /* Centra el texto dentro del cuerpo */
-}
-
-/* Estilos para la imagen de la tarjeta */
-.tarjeta img {
-  border-radius: 8px; /* Bordes redondeados para la imagen */
-}
-
-/* Estilos para el resumen dentro del detalle */
-tarjeta details p {
-  margin: 10px 0; /* Margen del resumen dentro del detalle */
-}
-
-/* Animación de transición para el resumen dentro del detalle */
-tarjeta details summary {
-  transition: color 0.3s ease-in-out; /* Animación suave de color */
-}
-
-tarjeta details summary:hover {
-  color: #007bff; /* Cambia el color al pasar el ratón sobre el resumen */
-
-}
-h1.text-primary {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.5em;
-    color: #333; /* Color del texto */
-    background-color: #f8f9fa; /* Color de fondo gris claro */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-}
-
-h1.text-primary i {
-    margin-right: 10px; /* Espaciado a la derecha del icono */
-}
-
-h1.text-primary .fa-exclamation-triangle {
-    color: #ff6347; /* Color del icono (rojo) */
-}
-
-
-
-
-
-
-</style>
-
-<center><h1 class="text-primary">Noticias</h1></center>
-
-</div>
-<div class="container">
-  <div class="">
-
-  <link rel="stylesheet" href="panel_administrativo/bootstrap/css/bootstrap.min.css">
-  </div>
-  <br />
-  <div class="">
-    <?php
-	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img, fecha_modificacion FROM noticias ORDER BY Imagen_ID DESC');
-	$stmt->execute();
-	
-	if($stmt->rowCount() > 0)
-	{
-		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
-		{
-			extract($row);
-			?>
-    <div class=" col-sm-3">
-
-	
-     <div class="tarjeta">
-      <div class="tituloo ">
-	 <center><h3 class="" >  <!-- Modifique -->
-	 <?php echo $Imagen_Marca."&nbsp;
- 	  &nbsp;" ?></h3></center></div>
-     <div class="cuerpo">
-       <img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
-      
-        <p class="d-inline-flex gap-1">
-        <p> <i style="  font-size: 15px;" >Última modificación: <?php echo $row['fecha_modificacion']; ?></i></p>
-      </p>
-      
-       <details style="font-size:15px">
-
-        <summary style="font-size:15px" >ver noticia </summary>
-      
-
-        <p >
-            
-	     <?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?>
-        </p>
-       </details>
-
-
-
- 
-
-
-</div>
-
-
-<div class="pie">
-<!-- Button trigger modal -->
-
-
-
-</div>
-</div>
-     <br>
-	 
+<br>
+<br>
+        <!-- Inicio noticia -->
+        <div class="container">
+    <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+        <h1>SECCION DE NOTICIAS</h1>
     </div>
-	
-    <?php
-		}
-	}
-	else
-	{
-		?>
-    <div class="col-sm-12">
-      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
-    </div>
-    <?php
-	}
-	
-?>
+    <div class="row g-5 justify-content-center">
+        <?php
+        $stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img, fecha_modificacion FROM noticias ORDER BY Imagen_ID DESC');
+        $stmt->execute();
 
-
+        if ($stmt->rowCount() > 0) {
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                extract($row);
+        ?>
+                <div class="col-lg-2 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+                        <img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded-top" style="max-height: 200px;" alt="Imagen referente a la noticia">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop_<?php echo $Imagen_ID; ?>" class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Ver Noticia Completa</a>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <br>
+                            <br>
+                            <br>
+                            <h5 class=""><?php echo $Imagen_Marca . "&nbsp;&nbsp;"; ?></h5>
+                            <span class="text-secondary"><?php echo $row['fecha_modificacion']; ?></span>
+                        </div>
+                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                        </div>
+                    </div>
                 </div>
-             
-
-             </div>
-
+        
+         <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop_<?php echo $Imagen_ID; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"><?php echo $Imagen_Marca. "&nbsp;&nbsp;"; ?></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded-top" alt="Imagen referente a la noticia">
+        <p><?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+  <?php
+            }
+        }
+        else
+	{
+		?><div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div><?php
+	}
+        ?>
+    </div>
+</div>
+<!-- Fin noticias -->
+<br>
+<br>
+<br>
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">

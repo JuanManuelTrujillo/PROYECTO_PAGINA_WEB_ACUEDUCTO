@@ -1,8 +1,5 @@
 <?php
-include "panel_administrativo/conexion_carrusel.php";
 include 'panel_administrativo/Conexion_noticia.php';
-
- $images = get_imgs();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -138,15 +135,15 @@ include 'panel_administrativo/Conexion_noticia.php';
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
-            $conexion = new mysqli("127.0.0.1", "root", "root", "imagenes_carousel");
-            $resultado = $conexion->query("SELECT * FROM imagenes");
+            $conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+            $resultado = $conexion->query("SELECT * FROM imagenes_carousel ORDER BY id DESC");
 
             $first = true; // Para marcar la primera imagen como activa
 
             while ($row = $resultado->fetch_assoc()) {
                 $activeClass = $first ? 'active' : ''; // Añadir la clase 'active' a la primera imagen
                 echo '<div class="carousel-item ' . $activeClass . '">
-                        <img src="data:' . $row["tipo_archivo"] . ';base64,' . base64_encode($row["datos_archivo"]) . '" class="d-block w-100" alt="' . $row["nombre_archivo"] . '">
+                        <img src="data:' . $row["tipo_archivo"] . ';base64,' . base64_encode($row["datos_archivo"]) . '" class="d-block w-100"  alt="Imagenes Carousel' . $row["nombre_archivo"] . '">
                       </div>';
                 $first = false; // Después de la primera iteración, establecerlo como falso
             }

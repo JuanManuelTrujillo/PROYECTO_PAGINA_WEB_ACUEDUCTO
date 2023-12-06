@@ -50,5 +50,6 @@
 <script src="js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="js/dashboard.js"></script>
+
 </body>
 </html>

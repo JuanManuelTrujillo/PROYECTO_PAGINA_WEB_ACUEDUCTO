@@ -1,50 +1,60 @@
 <?php require_once "parte_superior.php"?>
 <?php
-include "conexion_carrusel.php";
-$images = get_imgs();
+include "conexion_subir_carousel.php";
 ?>
-<script>
-    function confirmacion(){
-        var respuesta = confirm("¿confirma que desea borrar esta imagen?");
-    if(respuesta == true){
-        return true;
-    }else {
-    return false;
-    }
-    }
-</script>
  <!-- Content Wrapper. Contains page content -->
  <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
   <h1 class="m-5 text-center">CARRUSEL DE IMAGENES</h1>
-  <br>
-  <a href="agregar_carrusel.php" class="btn m-0 btn-success">Agregar Imagen</a> 
-		<br><br>
-		<?php if(count($images)>0):?>
-<table class="table table-bordered">
-					<thead>
-						<th>Imagenes:</th>
-						<th>Descripción Imagen:</th>
-            <th>Opciones:</th>
-					</thead>
-			<?php foreach($images as $img):?>
-				<tr>
-				<td><img src="<?php echo $img->folder.$img->src; ?>" style="width:1000px;">				</td>
-				
-        <td><?php echo $img->title; ?></td>
-				<td>
-				<a class="btn btn-warning" href="descargar_carrusel.php?id=<?php echo $img->id; ?>">Descargar</a> 
-				<a class="btn btn-danger" onclick="return confirmacion()" href="eliminar_carrusel.php?id=<?php echo $img->id; ?>">Eliminar</a>
-			</td>
-				</tr>
-			<?php endforeach;?>
-</table>
-		<?php else:?>
+  <div class="container mt-5">
+    <form action="conexion_subir_carousel.php" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="archivo" class="form-label">Seleccionar una Imagen:</label>
+            <input type="file" class="form-control" id="archivo" name="archivo" accept="image/*" required>
+        </div>
+        <button type="submit" class="btn btn-success">Subir Imagen</button>
+    </form>
+</div>
+<hr>
+<div class="container-fluid">
+<?php
+$conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
 
-			<h4 class="alert alert-warning">No hay imagenes!</h4>
-		<?php endif; ?>
-    </section>
+$result = $conexion->query("SELECT id, nombre_archivo FROM imagenes_carousel ORDER BY id DESC");
+
+echo "<table class='table table-bordered'>";
+echo "<thead class='table-gray'>";
+echo "<tr><th>Imagen Carousel</th><th>Acciones</th></tr>";
+echo "</thead>";
+
+echo "<tbody>";
+
+while ($row = $result->fetch_assoc()) {
+    echo "<tr>";
+
+    // Columna de la imagen
+    echo "<td>";
+    echo "<img src='mostrar_imagen_carousel.php?id={$row['id']}' class='img-fluid' alt='Imagen Carousel'>";
+    echo "</td>";
+
+    // Columna de acciones
+    echo "<td>";
+    echo "<a href='eliminar_imagen_carousel.php?id={$row['id']}' class='btn btn-danger m-2' onclick='return confirm(\"¿Estás seguro de eliminar esta imagen?\")'>Eliminar</a> ";
+    echo "<a href='descargar_imagen_carousel.php?id={$row['id']}' class='btn btn-primary m-2'>Descargar</a>";
+    echo "</td>";
+
+    echo "</tr>";
+}
+
+echo "</tbody>";
+echo "</table>";
+
+$conexion->close();
+?>
+
+</div>
+  </section>
   <!-- /.content -->
 </div>
 

@@ -57,7 +57,7 @@ $tipo_usuario= $_SESSION['nombre_usuario'];
       </li>
     </ul>
     <div class="Text-center">
-      <h5>Acueducto y Alcantarillado La Jagua Huila</h5>
+      <h5>J.A.A.A La Jagua Huila</h5>
     </div>
 
     <!-- Right navbar links -->

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2023 a las 22:45:19
+-- Tiempo de generación: 07-12-2023 a las 23:34:16
 -- Versión del servidor: 8.0.33
 -- Versión de PHP: 8.2.4
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `registro_usuarios` (
   `id` int NOT NULL,
-  `nombre` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
-  `correo` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
-  `usuario` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
-  `contraseña` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
+  `nombre` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `correo` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `usuario` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `contraseña` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `acepta_terminos` tinyint(1) NOT NULL,
   `fecha_registro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2023 a las 22:45:03
+-- Tiempo de generación: 07-12-2023 a las 23:34:04
 -- Versión del servidor: 8.0.33
 -- Versión de PHP: 8.2.4
 
@@ -39,11 +39,11 @@ CREATE TABLE `junta` (
 --
 
 INSERT INTO `junta` (`imagen_ID`, `imagen_Marca`, `imagen_Tipo`, `imagen_Img`) VALUES
-(34, 'savid', 'administrador', '16653.jpg'),
-(35, 'savid', 'administrador', '167700.jpg'),
-(29, 'cristian ', 'administrador', '341144.jpg'),
-(36, 'savid', 'administrador', '143994.jpg'),
-(37, 'savid', 'administrador', '590804.jpg');
+(44, 'CRISTIAN MANRIQUE BERNAL', 'administrador', '146077.jpg'),
+(43, 'CRISTIAN MANRIQUE BERNAL', 'administrador', '797170.jpg'),
+(42, 'CRISTIAN MANRIQUE BERNAL', 'administrador', '272613.jpg'),
+(46, 'CAMILA GARCIA GARCIA', 'administrador', '475732.jpg'),
+(41, 'JUAN TRUJILLO TRUJILLO', 'presidente', '160025.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -63,7 +63,7 @@ ALTER TABLE `junta`
 -- AUTO_INCREMENT de la tabla `junta`
 --
 ALTER TABLE `junta`
-  MODIFY `imagen_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `imagen_ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

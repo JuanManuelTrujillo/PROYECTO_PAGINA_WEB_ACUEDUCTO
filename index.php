@@ -197,7 +197,7 @@ include 'panel_administrativo/Conexion_noticia.php';
                     </div>
                 </div>
         
-         <!-- Modal -->
+         <!--  inicio Modal -->
   <div class="modal fade" id="staticBackdrop_<?php echo $Imagen_ID; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">

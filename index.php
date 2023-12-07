@@ -119,7 +119,7 @@ include 'panel_administrativo/Conexion_noticia.php';
                             <a href="transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
                             <a href="ayuda_manuales/ayuda_manuales.php" class="nav-item nav-link">Ayuda</a>
                         </div>
-                        <a href="panel_administrativo/ingreso.php" target="_blank" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
+                        <a href="panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">

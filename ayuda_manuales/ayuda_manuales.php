@@ -89,7 +89,6 @@
                                     <a href="../nuestra_empresa/mision_vision.php" class="dropdown-item">Misión y Visión </a>
                                     <a href="../nuestra_empresa/junta_administradora.php" class="dropdown-item">Nuestra Junta Administradora</a>
                                     <a href="../nuestra_empresa/funciones-generales.php" class="dropdown-item">Funciones Generales</a>
-                                    <a href="../nuestra_empresa/normatividad.php" class="dropdown-item">Normatividad</a>
                                     <a href="../nuestra_empresa/glosario.php" class="dropdown-item">Glosario</a>
                                 </div>
                             </div>
@@ -116,10 +115,8 @@
                                 </div>
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
-                            <div class="nav-item dropdown">
-                                <a href="transparencia.php" class="nav-link " data-bs-toggle="dropdown">Transparencia</a>
-
-                            </div>
+                            <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
+                            <a href="ayuda_manuales.php" class="nav-item nav-link">Ayuda</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>

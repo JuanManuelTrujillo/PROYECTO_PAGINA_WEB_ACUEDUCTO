@@ -113,6 +113,7 @@
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
                             <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
+                            <a href="../ayuda_manuales/ayuda_manuales.php" class="nav-item nav-link">Ayuda</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>

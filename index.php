@@ -191,7 +191,7 @@ include 'panel_administrativo/Conexion_noticia.php';
                             <br>
                             <br>
                             <h5 class=""><?php echo $Imagen_Marca . "&nbsp;&nbsp;"; ?></h5>
-                            <span class="text-secondary"><?php echo $row['fecha_modificacion']; ?></span>
+                            <span class="text-secondary"><b>Fecha: </b> <?php echo $row['fecha_modificacion']; ?></span>
                         </div>
                         <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
                         </div>
@@ -200,7 +200,7 @@ include 'panel_administrativo/Conexion_noticia.php';
         
          <!-- Modal -->
   <div class="modal fade" id="staticBackdrop_<?php echo $Imagen_ID; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="staticBackdropLabel"><?php echo $Imagen_Marca. "&nbsp;&nbsp;"; ?></h1>
@@ -208,6 +208,8 @@ include 'panel_administrativo/Conexion_noticia.php';
         </div>
         <div class="modal-body">
         <img src="panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded-top" alt="Imagen referente a la noticia">
+        <br>
+        <br>
         <p><?php echo "&nbsp;&nbsp;".$Imagen_Tipo; ?></p>
         </div>
         <div class="modal-footer">

@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+$conexion = new mysqli("127.0.0.1", "root", "", "u684809565_acueducto");
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     $id_descargar = $_GET['id'];

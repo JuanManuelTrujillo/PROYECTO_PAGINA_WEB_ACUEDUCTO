@@ -1,3 +1,5 @@
+<?php require_once 'obras_conexion.php'; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -111,7 +113,6 @@
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
                             <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
-                            <a href="../ayuda_manuales/ayuda_manuales.php" class="nav-item nav-link">Ayuda</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>
@@ -124,150 +125,54 @@
         </div>
         <!-- Navbar End -->
 
-
-        <!-- Project Start -->
-        <?php
-// Archivo de conexion con la base de datos
-require_once 'obras_conexion.php';
-// Condicional para validar el borrado de la imagen
-if(isset($_GET['delete_id']))
-{
-	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM tbl_imagenes WHERE Imagen_ID =:uid');
-	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
-	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
-	// Ruta de la imagen
-	unlink("imagenes/".$imgRow['Imagen_Img']);
-	
-	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM tbl_imagenes WHERE Imagen_ID =:uid');
-	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
-	$stmt_delete->execute();
-	// Redireccioa al inicio
-	header("Location: index.php");
-}
-
-?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
-    <title>Subir imagen al servidor usando PDO MySQL</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .container {
-            margin-top: 20px;
-        }
-
-        h2 {
-            color: #007bff;
-            text-align: center;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .col-md-4 {
-            margin-bottom: 30px;
-            overflow: hidden;
-        }
-
-        .img-container {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .img-container:hover {
-            transform: scale(1.3);
-        }
-
-        .img-container img {
-            width: 350px;
-            height: 500px;
-            object-fit: cover;
-            display: block;
-            border-radius: 10px;
-        }
-
-        .img-container p {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 15px;
-            margin: 0;
-            text-align: center;
-            font-weight: bold;
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 0 0 10px 10px;
-        }
-
-        .alert-warning {
-            margin-top: 20px;
-            text-align: center;
-        }
-    </style>
-    <script src="bootstrap/js/jquery.min.js"></script>
-</head>
-
-<body>
+        <!-- Inicio Obras -->
+        <div class="container-fluid project py-5 mb-5">
     <div class="container">
-        <div class=""></div>
-        <br>
-        <center><h2>GALERIA DE FOTOS</h2></center>
-        <br>
-        <div class="row">
-            <br>
-            <?php
-            $stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM obras ORDER BY Imagen_ID DESC');
-            $stmt->execute();
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Galeria de Obras</h5>
+            <h1>Acueducto y Alcantarillado</h1>
+        </div>
 
-            if ($stmt->rowCount() > 0) {
+        <?php
+        $stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM obras ORDER BY Imagen_ID DESC');
+        $stmt->execute();
+
+        if ($stmt->rowCount() > 0) {
+            ?>
+            <div class="row g-5">
+                <?php
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     extract($row);
                     ?>
-                    <center>
-                        <div class="col-md-4"><br><br>
-                            <div class="img-container">
-                                <p class=""><?php echo $Imagen_Marca . "&nbsp;" . $Imagen_Tipo; ?></p><br>
-                                <img src="../panel_administrativo/imagenes1/<?php echo $row['Imagen_Img']; ?>" class="img-rounded" alt="Imagen">
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="../panel_administrativo/imagenes1/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <p class="m-0 text-white"><?php echo $Imagen_Marca . "&nbsp;" . $Imagen_Tipo; ?></p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                    </div>
                     <?php
                 }
-            } else {
                 ?>
-                <div class="col-md-12">
-                    <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
-                </div>
+            </div>
             <?php
-            }
+        } else {
             ?>
-        </div>
+            <div class="col-md-12">
+                <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+            </div>
+            <?php
+        }
+        ?>
     </div>
-</body>
-</html>
+</div>
 
-        <!-- Project End -->
-
-       
-<br><br>
-      
-      
- 
+<!-- Fin Obras-->
 
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">

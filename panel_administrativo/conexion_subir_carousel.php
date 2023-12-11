@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tipo_archivo = $_FILES["archivo"]["type"];
     $datos_archivo = file_get_contents($_FILES["archivo"]["tmp_name"]);
 
-    $conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+    $conexion = new mysqli("127.0.0.1", "root", "", "u684809565_acueducto");
 
     $stmt = $conexion->prepare("INSERT INTO imagenes_carousel (nombre_archivo, tipo_archivo, datos_archivo) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $nombre_archivo, $tipo_archivo, $datos_archivo);

@@ -2,7 +2,7 @@
 
 $Localhost = '127.0.0.1';
 $Usuario_BD = 'root';
-$Password_BD = 'root';
+$Password_BD = '';
 $Nombre_BD = 'u684809565_acueducto';
 
 try{

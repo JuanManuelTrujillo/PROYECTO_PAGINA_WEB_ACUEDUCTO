@@ -1,3 +1,5 @@
+<?php require_once 'junta_conexion.php'; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -64,7 +66,6 @@
         </div>
         <!-- Topbar End -->
 
-
         <!-- Navbar Start -->
         <div class="navegacion container-fluid">
             <div class="container-fluid">
@@ -112,7 +113,6 @@
                             </div>
                             <a href="../enseñanza/fuentes.php" class="nav-item nav-link">Enseñanza</a>
                             <a href="../transparencia/transparencia.php" class="nav-item nav-link">Transparencia</a>
-                            <a href="../ayuda_manuales/ayuda_manuales.php" class="nav-item nav-link">Ayuda</a>
                         </div>
                         <a href="../panel_administrativo/ingreso.php" class="me-2"><button type="button" class="btn-sesion px-4 py-sm-2 px-sm-4 btn btn-secondary rounded-pill" style=" color: white;">Iniciar Sesión</button></a>
                     </div>
@@ -122,195 +122,58 @@
                     </div>
                 </nav>
             </div>
-       
-        <!-- Navbar End -->
-
-
-      
-
-
-
-        <!-- Inicio Conteido -->
-          <!-- Page Header Start -->
-          <?php
-// Archivo de conexion con la base de datos
-require_once 'junta_conexion.php';
-// Condicional para validar el borrado de la imagen
-if(isset($_GET['delete_id']))
-{
-	// Selecciona imagen a borrar
-	$stmt_select = $DB_con->prepare('SELECT Imagen_Img FROM junta WHERE Imagen_ID =:uid');
-	$stmt_select->execute(array(':uid'=>$_GET['delete_id']));
-	$imgRow=$stmt_select->fetch(PDO::FETCH_ASSOC);
-	// Ruta de la imagen
-	unlink("imagenes/".$imgRow['Imagen_Img']);
-	
-	// Consulta para eliminar el registro de la base de datos
-	$stmt_delete = $DB_con->prepare('DELETE FROM junta WHERE Imagen_ID =:uid');
-	$stmt_delete->bindParam(':uid',$_GET['delete_id']);
-	$stmt_delete->execute();
-	// Redireccioa al inicio
-	header("Location: index.php");
-}
-
-?>
-
-
-<hr>
 </div>
-
-
-<center><h1>Junta Administradora</h1></center>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyOs2nr7SZnI5b6EGgo1p1Bsf87/2P" crossorigin="anonymous"></script>
-</head>
-<body>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12" style="height: 300px; overflow-x: auto; border: px solid #ddd;">
-        <!-- Contenido de tu página aquí -->
-        <!-- Puedes agregar más contenido dentro de este div -->
-       
-        <!-- Fin del contenido -->
-        <style>
-        .tarjeta {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-
-           
-        }
-
-        .tarjeta .cuerpo {
-            padding: 15px;
-        }
-
-        .tarjeta img {
-           
-
-            border-radius: 100%; /* Hace que la imagen sea redonda */
-        object-fit: cover;
-        width: 100%;
-        height: 200px;
-       
-        }
-
-        .tarjeta .titulo {
-            background-color: #f8f9fa;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .tarjeta .pie {
-            text-align: right;
-            padding: 10px;
-        }
-        @media (max-width: 768px) {
-        .tarjeta {
-            max-width: 80%;
-        }
-    }
-    </style>
-        
-        
-<div class="">
-  <div class="container">
-
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  </div>
-  <br />
-  <div class="">
-    <?php
-	
-	$stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta ORDER BY Imagen_ID DESC');
-	$stmt->execute();
-	
-	if($stmt->rowCount() > 0)
-	{
-		while($row=$stmt->fetch(PDO::FETCH_ASSOC))
-		{
-			extract($row);
-			?>
-    <div class=" col-sm-4">
-
-	
-  <div class="tarjeta">
-<div class="titulo">
-	</div>
-<div class="cuerpo">
-<img src="../panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-rounded"  style="width:100%" height="170px"  >
-
-<p class="d-inline-flex gap-1">
-<center></p>
-
-
-            
-	<?php echo  $Imagen_Marca."&nbsp;/
-	  &nbsp;" .$Imagen_Tipo ; ?>
-        </p></center>
-    <hr>
-
-
+ <!-- Navbar End -->
 
  
-
-
+        <!-- Inicio Junta Administradora -->
+        <div class="container-fluid py-5 mb-5 team">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h1>Junta Administradora</h1>
+        </div>
+        
+        <?php
+        $stmt = $DB_con->prepare('SELECT Imagen_ID, Imagen_Marca, Imagen_Tipo, Imagen_Img FROM junta');
+        $stmt->execute();
+        
+        if ($stmt->rowCount() > 0) {
+            ?>
+            <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+                <?php
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    extract($row);
+                    ?>
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
+                                    <img src="../panel_administrativo/imagenes/<?php echo $row['Imagen_Img']; ?>" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class=""><?php echo  $Imagen_Marca."&nbsp;" ; ?></h4>
+                                    <p class="m-0"><?php echo  $Imagen_Tipo."&nbsp;"; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+        <?php
+        } else {
+            ?>
+            <div class="col-sm-12">
+                <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
+            </div>
+        <?php
+        }
+        ?>
+    </div>
 </div>
 
-
-<div class="pie">
-<!-- Button trigger modal -->
-
-
-
-</div>
-</div>
-     <br>
-	 
-    </div>
-	
-    <?php
-		}
-	}
-	else
-	{
-		?>
-    <div class="col-sm-12">
-      <div class="alert alert-warning"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp; Datos no encontrados ... </div>
-    </div>
-    <?php
-	}
-	
-?>
-
-
-
-
-
-                </div>
-             
-
-             </div>
-
-
-
-
-
- 
-
-
-
-             </div>
-    </div>
-  </div>
-       <br>
-      
+<!-- Fin Junta Administradora -->
       
 <!-- Footer Start -->
 <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">

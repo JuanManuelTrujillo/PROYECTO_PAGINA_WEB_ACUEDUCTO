@@ -15,6 +15,23 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="css/adminlte.css">
 </head>
+<style>
+    /* Agregar estilos para el botón flotante de ayuda */
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 50px;
+      background-color: #007bff; /* Puedes cambiar el color de fondo según tu preferencia */
+      border: none;
+      z-index: 1000;
+    }
+  </style>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
@@ -61,7 +78,13 @@
     <!-- /.login-card-body -->
   </div>
 </div>
-<!-- /.login-box -->
+ <!-- Botón flotante de ayuda -->
+ <div class="floating-button">
+ <a href="ayuda_manuales/ayuda_manuales.php" class="btn " data-toggle="tooltip modal" data-placement="left" data-bs-target="#exampleModal" title="Ayuda">
+      <i class="fas fa-question"></i>
+    </a>
+  </div>
+  
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
@@ -69,4 +92,9 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="js/adminlte.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </html>

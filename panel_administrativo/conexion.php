@@ -2,7 +2,7 @@
 // Conexión a la base de datos
 $servername = "127.0.0.1";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "u684809565_acueducto"; 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

@@ -134,7 +134,7 @@ include 'panel_administrativo/Conexion_noticia.php';
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
-            $conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+            $conexion = new mysqli("127.0.0.1", "root", "", "u684809565_acueducto");
             $resultado = $conexion->query("SELECT * FROM imagenes_carousel ORDER BY id DESC");
 
             $first = true; // Para marcar la primera imagen como activa
@@ -289,6 +289,7 @@ include 'panel_administrativo/Conexion_noticia.php';
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+        
 
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

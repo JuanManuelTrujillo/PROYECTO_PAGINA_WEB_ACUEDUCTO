@@ -1,5 +1,5 @@
 <?php
-$conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+$conexion = new mysqli("127.0.0.1", "root", "", "u684809565_acueducto");
 
 $id = $_GET['id'];
 $result = $conexion->query("SELECT tipo_archivo, datos_archivo FROM imagenes_carousel WHERE id = $id");

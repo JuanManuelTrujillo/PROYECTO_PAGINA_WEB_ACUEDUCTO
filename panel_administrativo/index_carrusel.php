@@ -19,7 +19,7 @@ include "conexion_subir_carousel.php";
 <hr>
 <div class="container-fluid">
 <?php
-$conexion = new mysqli("127.0.0.1", "root", "root", "u684809565_acueducto");
+$conexion = new mysqli("127.0.0.1", "root", "", "u684809565_acueducto");
 
 $result = $conexion->query("SELECT id, nombre_archivo FROM imagenes_carousel ORDER BY id DESC");
 
